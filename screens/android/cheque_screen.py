@@ -13,10 +13,13 @@ class ChequeScreen(Screen):
     chek_transaction_details = ("id", "trastpay.uz:id/layoutTransactionDetails")
     to_home_screen_button = ("id", "trastpay.uz:id/btnContinue")
     """   ** P2P Transaction ends **   """
+    """   ** Payments **   """
+
+    """   ** Payments ends **   """
 
     def check_cheque_title(self):
         try:
-            if self.is_visible(self.success_img) and self.is_visible(self.muvaffaqqiyatli_cheque_title):
+            if self.is_visible(self.success_img) and self.get_element_text(self.muvaffaqqiyatli_cheque_title) != "Xato":
                 return True
         except Exception:
             raise NoSuchElementException
@@ -35,7 +38,7 @@ class ChequeScreen(Screen):
                                                    recipient_info):
         date = self.get_current_date()
         matched_data = 0
-        details = [overall_amount, sent_summ, date, sender_info, commission, recipient_info]
+        details = [date, overall_amount, sent_summ, sender_info, commission, recipient_info]
         cheque_details = self.get_elements(self.cheque_details_list)
         print("Elements length: ", len(cheque_details))
         for i in range(0, 6):
@@ -47,3 +50,6 @@ class ChequeScreen(Screen):
             print("All matched data : ", matched_data)
             return True
         return False
+
+    def click_on_home_screen_button(self):
+        self.click(self.to_home_screen_button)

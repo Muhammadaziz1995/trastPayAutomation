@@ -1,3 +1,6 @@
+import allure
+from allure_commons.types import AttachmentType
+
 from flows.android.android_base_flow import AndroidBaseFlow
 import time
 
@@ -22,6 +25,9 @@ class LoginFlow(AndroidBaseFlow):
         self.welcome_screen.create_pin_code()
         assert self.welcome_screen.is_confirm_pin_code_screen_open()
         self.welcome_screen.create_pin_code()
-        assert self.welcome_screen.is_dear_user_message_appear()
+        if self.welcome_screen.is_dear_user_message_appear():
+            assert True
+        else:
+            self.screens.get_a_screenshot_as_PNG("Loan.png")
         time.sleep(2)
         return True

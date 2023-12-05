@@ -4,8 +4,12 @@ from selenium.common.exceptions import NoSuchElementException, WebDriverExceptio
 from appium.webdriver.common.touch_action import TouchAction
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
-from appium.webdriver.common.mobileby import MobileBy
+# from appium.webdriver.common.mobileby import MobileBy
 from appium.webdriver.common.appiumby import AppiumBy
+import allure
+from allure_commons.types import AttachmentType
+import pytest
+import pytest_html
 
 
 class Screen:
@@ -51,24 +55,24 @@ class Screen:
 
     def get_element_by_type(self, method, value):
         if method == 'accessibility_id':
-            return WebDriverWait(self.driver, 70).until(ec.visibility_of_element_located((MobileBy.ACCESSIBILITY_ID, value)))
+            return WebDriverWait(self.driver, 70).until(ec.visibility_of_element_located((AppiumBy.ACCESSIBILITY_ID, value)))
         elif method == 'android':
-            return WebDriverWait(self.driver, 70).until(ec.element_to_be_clickable((MobileBy.ANDROID_UIAUTOMATOR, value)))
+            return WebDriverWait(self.driver, 70).until(ec.element_to_be_clickable((AppiumBy.ANDROID_UIAUTOMATOR, value)))
         elif method == 'ios':
-            return WebDriverWait(self.driver, 70).until(ec.element_to_be_clickable((MobileBy.IOS_UIAUTOMATION, value)))
+            return WebDriverWait(self.driver, 70).until(ec.element_to_be_clickable((AppiumBy.IOS_UIAUTOMATION, value)))
         elif method == 'class_name':
-            return WebDriverWait(self.driver, 70).until(ec.element_to_be_clickable((MobileBy.CLASS_NAME, value)))
+            return WebDriverWait(self.driver, 70).until(ec.element_to_be_clickable((AppiumBy.CLASS_NAME, value)))
         elif method == 'id':
             # return WebDriverWait(self.driver, 50).until(ec.element_to_be_clickable((MobileBy.ID, value)))
-            return WebDriverWait(self.driver, 70).until(ec.visibility_of_element_located((MobileBy.ID, value)))
+            return WebDriverWait(self.driver, 70).until(ec.visibility_of_element_located((AppiumBy.ID, value)))
         elif method == 'xpath':
-            return WebDriverWait(self.driver, 70).until(ec.visibility_of_element_located((MobileBy.XPATH, value)))
+            return WebDriverWait(self.driver, 70).until(ec.visibility_of_element_located((AppiumBy.XPATH, value)))
         elif method == 'name':
-            return WebDriverWait(self.driver, 70).until(ec.element_to_be_clickable((MobileBy.NAME, value)))
+            return WebDriverWait(self.driver, 70).until(ec.element_to_be_clickable((AppiumBy.NAME, value)))
         elif method == 'class_chain':
-            return WebDriverWait(self.driver, 70).until(ec.visibility_of_element_located((MobileBy.IOS_CLASS_CHAIN, value)))
+            return WebDriverWait(self.driver, 70).until(ec.visibility_of_element_located((AppiumBy.IOS_CLASS_CHAIN, value)))
         elif method == 'predicate':
-            return WebDriverWait(self.driver, 70).until(ec.element_to_be_clickable((MobileBy.IOS_PREDICATE, value)))
+            return WebDriverWait(self.driver, 70).until(ec.element_to_be_clickable((AppiumBy.IOS_PREDICATE, value)))
         else:
             raise Exception('Invalid locator method.')
 
@@ -89,7 +93,7 @@ class Screen:
 
     def get_elements_by_type(self, method, value):
         if method == 'accessibility_id':
-            return WebDriverWait(self.driver, 50).until(ec.visibility_of_all_elements_located((MobileBy.ACCESSIBILITY_ID, value)))
+            return WebDriverWait(self.driver, 50).until(ec.visibility_of_all_elements_located((AppiumBy.ACCESSIBILITY_ID, value)))
         elif method == 'android':
             return WebDriverWait(self.driver, 50).until(ec.visibility_of_all_elements_located((AppiumBy.ANDROID_UIAUTOMATOR, value)))
         elif method == 'ios':
@@ -99,21 +103,21 @@ class Screen:
         elif method == 'class_name':
             time.sleep(3)
             # return WebDriverWait(self.driver, 50).until(ec.visibility_of_all_elements_located((AppiumBy.CLASS_NAME, value)))
-            return self.driver.find_elements(MobileBy.CLASS_NAME, value)
+            return self.driver.find_elements(AppiumBy.CLASS_NAME, value)
         elif method == 'id':
             time.sleep(2)
-            return WebDriverWait(self.driver, 50).until(ec.visibility_of_all_elements_located((MobileBy.ID, value)))
+            return WebDriverWait(self.driver, 50).until(ec.visibility_of_all_elements_located((AppiumBy.ID, value)))
             # return self.driver.find_elements(MobileBy.ID, value)
         elif method == 'xpath':
             time.sleep(2)
-            return WebDriverWait(self.driver, 50).until(ec.visibility_of_all_elements_located((MobileBy.XPATH, value)))
+            return WebDriverWait(self.driver, 50).until(ec.visibility_of_all_elements_located((AppiumBy.XPATH, value)))
             # return self.driver.find_elements(MobileBy.XPATH, value)
         elif method == 'name':
-            return WebDriverWait(self.driver, 50).until(ec.visibility_of_all_elements_located((MobileBy.NAME, value)))
+            return WebDriverWait(self.driver, 50).until(ec.visibility_of_all_elements_located((AppiumBy.NAME, value)))
         elif method == 'class_chain':
-            return WebDriverWait(self.driver, 50).until(ec.visibility_of_all_elements_located((MobileBy.IOS_CLASS_CHAIN, value)))
+            return WebDriverWait(self.driver, 50).until(ec.visibility_of_all_elements_located((AppiumBy.IOS_CLASS_CHAIN, value)))
         elif method == 'predicate':
-            return WebDriverWait(self.driver, 50).until(ec.visibility_of_all_elements_located((MobileBy.IOS_PREDICATE, value)))
+            return WebDriverWait(self.driver, 50).until(ec.visibility_of_all_elements_located((AppiumBy.IOS_PREDICATE, value)))
         else:
             raise Exception('Invalid locators method.')
 
@@ -350,3 +354,27 @@ class Screen:
     def new_scroll_with_duration(self, x1, y1, x2, y2, duration=800):
         time.sleep(2)
         self.driver.swipe(x1, y1, x2, y2, duration=duration)
+
+    def get_a_screenshot_as_PNG(self, filename):
+        # allure.attach(self.driver.get_screenshot_as_file(filename), name=filename, attachment_type=AttachmentType.PNG)
+        allure.attach(self.driver.save_screenshot(filename), name=filename, attachment_type=allure.attachment_type.PNG)
+
+    # def capture_screenshot(self, filename):
+    #     self.driver.get_screenshot_as_file(filename)
+
+    # @pytest.hookimpl(hookwrapper=True)
+    # def pytest_runtest_makereport(self, item, call):
+    #     pytest_html = item.config.pluginmanager.getplugin('html')
+    #     outcome = yield
+    #     report = outcome.get_result()
+    #     extras = getattr(report, "extras", [])
+    #     if report.when == "call" or report.when == "setup":
+    #         extras.append(pytest_html.extras.url(""))
+    #         xfail = hasattr(report, "wasxfail")
+    #         if (report.skipped and xfail) or (report.failed and not xfail):
+    #             file_name = report.nodeid.replace("::", "_") + ".png"
+    #             self.capture_screenshot(file_name)
+    #             if file_name:
+    #                 html = '<div><img src="%s" alt="screenshot" style="width:300px;height=200px" onclick="window.open(this.src align="right")"></div>'%file_name
+    #             extras.append(pytest_html.extras.html(html))
+    #         report.extras = extras

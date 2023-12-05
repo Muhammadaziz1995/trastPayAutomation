@@ -2,9 +2,15 @@ import json
 import os
 import subprocess
 
+
 import pytest
 from appium import webdriver
 from appium.webdriver.appium_service import AppiumService
+from allure_commons.types import AttachmentType
+from allure import attachment_type
+import allure
+from appium.options.android import UiAutomator2Options
+
 
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
@@ -23,38 +29,12 @@ def pytest_addoption(parser):
     parser.addoption('--repeat', action='store',
                      help='Number of times to repeat each test')
     # parser.addoption("--emulator_1", action="store", default="Pixel_6_Pro_API_10.0")
-    parser.addoption("--emulator_1", action="store", default="Pixel_6_Pro_30_11.0")
+    parser.addoption("--emulator_1", action="store", default="Pixel_6_Pro_11.0")
     # parser.addoption("--emulator_2", action="store", default="")
     # parser.addoption("--emulator_3", action="store", default="")
     # parser.addoption("--emulator_4", action="store", default="")
-    parser.addoption("--app_path", action="store", default="C:\\Users\\user\\Desktop\\trastpay-automation\\apps\\"
-                                                           "trastPay_1.1.16.debug.apk")
-
-
-@pytest.fixture(scope="module")
-def data_user_a(request):
-    return load_data("default_data_for_user_a")
-
-
-@pytest.fixture(scope="module")
-def data_user_b(request):
-    return load_data("default_data_for_user_b")
-
-
-@pytest.fixture(scope="module")
-def data_user_c(request):
-    return load_data("default_data_for_user_c")
-
-
-@pytest.fixture(scope="module")
-def country_codes(request):
-    return load_data("country_codes")
-
-
-def load_data(file_name):
-    with open(PATH('data/%s.json' % file_name)) as data_file:
-        json_str = data_file.read()
-    return json.loads(json_str)
+    parser.addoption("--app_path", action="store", default="/Users/mx13/Desktop/tpay_automation/apps/"
+                                                           "trastPay_1.1.26.05.debug.apk")
 
 
 @pytest.fixture(scope="session")
@@ -67,13 +47,35 @@ def app_path(request, pytestconfig):
     return pytestconfig.getoption('--app_path')
 
 
+global driver_1, driver_2, driver_3, request
+
+
+@pytest.fixture()
+def get_screenshot_on_failed_case(request):
+    yield
+    item = request.node
+    if item.rep_call.failed:
+        allure.attach(request.instance.driver_1.get_screenshot_as_png(),
+                      name="failed_test",
+                      attachment_type=attachment_type.PNG)
+
+
+@pytest.hookimpl(hookwrapper=True, tryfirst=True)
+def pytest_runtest_makereport(item, call):
+    outcome = yield
+    rep = outcome.get_result()
+    setattr(item, "rep_" + rep.when, rep)
+    return rep
+
+
 @pytest.fixture()
 def emulator_1(request, pytestconfig, platform, app_path):
+
     appium_server_1 = AppiumService()
     appium_server_1.start(
         args=[
             '--address',
-            '127.0.0.1',
+            '0.0.0.0',
             '--port',
             '4723',
             '--base-path',
@@ -86,15 +88,38 @@ def emulator_1(request, pytestconfig, platform, app_path):
     request.addfinalizer(appium_server_1.stop)
     emulator_name = pytestconfig.getoption('--emulator_1')
     url = 'http://localhost:4723/wd/hub'
-    request.instance.driver_1 = webdriver.Remote(url, setup_capabilities(platform, emulator_name, app_path))
+    capabilities_options = UiAutomator2Options().load_capabilities(setup_capabilities(platform, emulator_name, app_path))
+    request.instance.driver_1 = webdriver.Remote(url, options=capabilities_options)
 
     def teardown():
-        request.instance.driver_1.close_app()
+        request.instance.driver_1.terminate_app('trastpay.uz')
         request.instance.driver_1.quit()
         if platform == "android":
             subprocess.Popen('adb -s emulator-5554 emu kill', shell=True)
 
     request.addfinalizer(teardown)
+
+    # @pytest.hookimpl(hookwrapper=True, tryfirst=True)
+    # def pytest_runtest_makereport(item, call):
+    #     pytest_html = item.config.pluginmanager.getplugin('html')
+    #     outcome = yield
+    #     report = outcome.get_result()
+    #     report.session = item.session
+    #     extras = getattr(report, "extras", [])
+    #     if report.when == "call" or report.when == "setup":
+    #         extras.append(pytest_html.extras.url(""))
+    #         xfail = hasattr(report, "wasxfail")
+    #         if (report.skipped and xfail) or (report.failed and not xfail):
+    #             report_directory = os.path.dirname(item.config.option.htmlpath)
+    #             file_name = report.nodeid.replace("::", "_") + ".png"
+    #             destination_file = os.path.join(report_directory, file_name)
+    #             # request.instance.driver_1.save_screenshot(destination_file)
+    #             request.instance.driver_1.get_screenshot_as_file(destination_file)
+    #             allure.attach(request.instance.driver_1.save_screenshot(file_name), name="file_name", attachment_type=allure_commons.attachment_type.PNG)
+    #             if file_name:
+    #                 html = '<div><img src="%s" alt="screenshot" style="width:300px;height=200px" onclick="window.open(this.src align="right")"></div>' % file_name
+    #             extras.append(pytest_html.extras.html(html))
+    #         report.extras = extras
 
 
 @pytest.fixture()
@@ -102,7 +127,6 @@ def emulator_2(request, pytestconfig, platform, app_path):
     appium_server_2 = AppiumService()
     # appium_server_2.start(args=["-a", "0.0.0.0", "-p", "4724"])
     appium_server_2.start(a="0.0.0.0", p="4724")
-
     request.addfinalizer(appium_server_2.stop)
     emulator_name = pytestconfig.getoption('--emulator_2')
     url = 'http://localhost:4723/wd/hub'
@@ -133,26 +157,40 @@ def emulator_3(request, pytestconfig, platform, app_path):
             subprocess.Popen('adb -s emulator-5558 emu kill', shell=True)
 
     request.addfinalizer(teardown)
+# def pytest_html_report_title(report):
+#     report.title = "Mobile Automation Report"
 
 
 def setup_capabilities(platform, emulator_name, app_path):
     if platform == "android":
         capabilities = {
             'platformName': 'Android',
-            'platformVersion': emulator_name.split('_')[-1],
-            'deviceName': emulator_name,
-            'avd': emulator_name,
-            'newCommandTimeout': 3600,
-            'noReset': True,
-            'app': PATH(app_path),
-            'appWaitDuration': 300000,
-            'avdReadyTimeout': 500000,
-            'adbExecTimeout': 500000,
-            'automationName': 'UiAutomator2',
-            'appPackage': 'trastpay.uz',
-            'appActivity': 'uz.trastpay.ui.activity.MainActivity'
+            'appium:platformVersion': emulator_name.split('_')[-1],
+            'appium:deviceName': emulator_name,
+            'appium:avd': emulator_name,
+            'appium:newCommandTimeout': 3600,
+            'appium:noReset': True,
+            'appium:app': PATH(app_path),
+            'appium:appWaitDuration': 300000,
+            'appium:avdReadyTimeout': 500000,
+            'appium:adbExecTimeout': 500000,
+            'appium:automationName': 'UiAutomator2',
+            'appium:appPackage': 'trastpay.uz',
+            'appium:appActivity': 'uz.trastpay.ui.activity.MainActivity'
         }
-        return capabilities
+    else:
+        capabilities = {
+            "platformName": "iOS",
+            "appium:platformVersion": "15.5",
+            "appium:deviceName": "iPhone 12 Pro Max",
+            "appium:automationName": "XCUITest",
+            # "appium:app": "/Users/muhammadaziz/Desktop/AnorMobile/app/AnorMobile.app",
+            "appium:adbExecTimeout": "500000",
+            "appium:appWaitDuration": "300000",
+            "appium:noReset": True,
+            "appium:newCommandTimeout": "3600"
+        }
+    return capabilities
 
 
 @pytest.fixture

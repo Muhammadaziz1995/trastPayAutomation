@@ -1,0 +1,1217 @@
+[
+    {
+        "countryName": "Andijan Region",
+        "countryCode": "03",
+        "regions": [
+            {
+                "id": "001",
+                "name": "Andijan (city)",
+                "pickUpPoint": "001"
+            },
+            {
+                "id": "002",
+                "name": "Asaka (town)",
+                "pickUpPoint": "002"
+            },
+            {
+                "id": "003",
+                "name": " Khanabad (town)",
+                "pickUpPoint": "003"
+            },
+            {
+                "id": "004",
+                "name": "Karasu (town)",
+                "pickUpPoint": "004"
+            },
+            {
+                "id": "005",
+                "name": "Shahrihan (town)",
+                "pickUpPoint": "005"
+            },
+            {
+                "id": "006",
+                "name": "Andijan region",
+                "pickUpPoint": "006"
+            },
+            {
+                "id": "007",
+                "name": "Asaka district",
+                "pickUpPoint": "007"
+            },
+            {
+                "id": "008",
+                "name": "Balykchi's district",
+                "pickUpPoint": "008"
+            },
+            {
+                "id": "009",
+                "name": "Boz district",
+                "pickUpPoint": "009"
+            },
+            {
+                "id": "010",
+                "name": "Bulakbashi district",
+                "pickUpPoint": "010"
+            },
+            {
+                "id": "011",
+                "name": "Jalalkuduk district",
+                "pickUpPoint": "011"
+            },
+            {
+                "id": "012",
+                "name": "Izbaskan's district",
+                "pickUpPoint": "012"
+            },
+            {
+                "id": "013",
+                "name": "Komsomolabad district",
+                "pickUpPoint": "013"
+            },
+            {
+                "id": "014",
+                "name": "Kurgantepa district",
+                "pickUpPoint": "014"
+            },
+            {
+                "id": "015",
+                "name": "Markhamat's district",
+                "pickUpPoint": "015"
+            },
+            {
+                "id": "016",
+                "name": "Altinkul's district",
+                "pickUpPoint": "016"
+            },
+            {
+                "id": "017",
+                "name": "Pakhtaabad region",
+                "pickUpPoint": "017"
+            },
+            {
+                "id": "018",
+                "name": "Khodjaabad district",
+                "pickUpPoint": "018"
+            },
+            {
+                "id": "210",
+                "name": "Ulugnar district",
+                "pickUpPoint": "210"
+            },
+            {
+                "id": "214",
+                "name": "Shakhrikhan region",
+                "pickUpPoint": "214"
+            }
+        ]
+    },
+    {
+        "countryName": "Bukhara Region",
+        "countryCode": "06",
+        "regions": [
+            {
+                "id": "030",
+                "name": "Bukhara (city)",
+                "pickUpPoint": "030"
+            },
+            {
+                "id": "019",
+                "name": " Alat district",
+                "pickUpPoint": "019"
+            },
+            {
+                "id": "022",
+                "name": "Bukhara district",
+                "pickUpPoint": "022"
+            },
+            {
+                "id": "021",
+                "name": "Gijduvan district",
+                "pickUpPoint": "021"
+            },
+            {
+                "id": "025",
+                "name": "Zhondor's district",
+                "pickUpPoint": "025"
+            },
+            {
+                "id": "029",
+                "name": "Kagan's district",
+                "pickUpPoint": "029"
+            },
+            {
+                "id": "023",
+                "name": "Karakul district",
+                "pickUpPoint": "023"
+            },
+            {
+                "id": "028",
+                "name": "Karaulbazar district",
+                "pickUpPoint": "028"
+            },
+            {
+                "id": "027",
+                "name": "Peshkun's district",
+                "pickUpPoint": "027"
+            },
+            {
+                "id": "024",
+                "name": "Romitan district",
+                "pickUpPoint": "024"
+            },
+            {
+                "id": "026",
+                "name": "Shafirkan district",
+                "pickUpPoint": "026"
+            },
+            {
+                "id": "020",
+                "name": "Vabkent's district",
+                "pickUpPoint": "020"
+            },
+            {
+                "id": "220",
+                "name": "Kagan (city)",
+                "pickUpPoint": "220"
+            }
+        ]
+    },
+    {
+        "countryName": "Jizzax Province",
+        "countryCode": "08",
+        "regions": [
+            {
+                "id": "031",
+                "name": "Jizzax (city)",
+                "pickUpPoint": "031"
+            },
+            {
+                "id": "041",
+                "name": "Aranasay district",
+                "pickUpPoint": "041"
+            },
+            {
+                "id": "037",
+                "name": "Bakhmal district",
+                "pickUpPoint": "037"
+            },
+            {
+                "id": "034",
+                "name": "Dustlik district",
+                "pickUpPoint": "034"
+            },
+            {
+                "id": "038",
+                "name": "Forish district",
+                "pickUpPoint": "038"
+            },
+            {
+                "id": "033",
+                "name": "Gallyaaral district",
+                "pickUpPoint": "033"
+            },
+            {
+                "id": "040",
+                "name": "Sharaf Rashidov's district",
+                "pickUpPoint": "040"
+            },
+            {
+                "id": "035",
+                "name": "Mirzachul district",
+                "pickUpPoint": "035"
+            },
+            {
+                "id": "032",
+                "name": "Pakhtakor district",
+                "pickUpPoint": "032"
+            },
+            {
+                "id": "217",
+                "name": "Yangiabad district",
+                "pickUpPoint": "217"
+            },
+            {
+                "id": "036",
+                "name": "Zaamin district",
+                "pickUpPoint": "036"
+            },
+            {
+                "id": "039",
+                "name": "Zafarabad districts",
+                "pickUpPoint": "039"
+            },
+            {
+                "id": "042",
+                "name": "Zarbdar district",
+                "pickUpPoint": "042"
+            }
+        ]
+    },
+    {
+        "countryName": "Kashkadarya region",
+        "countryCode": "10",
+        "regions": [
+            {
+                "id": "043",
+                "name": "Karshi (city)",
+                "pickUpPoint": "043"
+            },
+            {
+                "id": "050",
+                "name": "Chirakchi district",
+                "pickUpPoint": "050"
+            },
+            {
+                "id": "046",
+                "name": "Dekhkanabad district",
+                "pickUpPoint": "046"
+            },
+            {
+                "id": "045",
+                "name": "Guzar district",
+                "pickUpPoint": "045"
+            },
+            {
+                "id": "047",
+                "name": "Kamashin's district",
+                "pickUpPoint": "047"
+            },
+            {
+                "id": "044",
+                "name": "Karshi district",
+                "pickUpPoint": "044"
+            },
+            {
+                "id": "048",
+                "name": "Kasan's district",
+                "pickUpPoint": "048"
+            },
+            {
+                "id": "053",
+                "name": "Casby District",
+                "pickUpPoint": "053"
+            },
+            {
+                "id": "052",
+                "name": "Kitab district",
+                "pickUpPoint": "052"
+            },
+            {
+                "id": "221",
+                "name": "Mirishkar district",
+                "pickUpPoint": "221"
+            },
+            {
+                "id": "056",
+                "name": "Mubarak district",
+                "pickUpPoint": "056"
+            },
+            {
+                "id": "054",
+                "name": "Nishan district",
+                "pickUpPoint": "054"
+            },
+            {
+                "id": "057",
+                "name": "Bakharistan district",
+                "pickUpPoint": "057"
+            },
+            {
+                "id": "049",
+                "name": "Shakhrisabz (city)",
+                "pickUpPoint": "049"
+            },
+            {
+                "id": "055",
+                "name": "U.Yusupov's district",
+                "pickUpPoint": "055"
+            },
+            {
+                "id": "051",
+                "name": "Yakkabag district",
+                "pickUpPoint": "051"
+            },
+            {
+                "id": "213",
+                "name": "Shakhrisabz district",
+                "pickUpPoint": "213"
+            }
+        ]
+    },
+    {
+        "countryName": "Navoi Region",
+        "countryCode": "12",
+        "regions": [
+            {
+                "id": "058",
+                "name": "Navoi (city)",
+                "pickUpPoint": "058"
+            },
+            {
+                "id": "059",
+                "name": "Zarafshan (city)",
+                "pickUpPoint": "059"
+            },
+            {
+                "id": "060",
+                "name": "Uchkuduk (city)",
+                "pickUpPoint": "060"
+            },
+            {
+                "id": "062",
+                "name": "Kanimekh's district",
+                "pickUpPoint": "062"
+            },
+            {
+                "id": "061",
+                "name": "Karmani's district",
+                "pickUpPoint": "061"
+            },
+            {
+                "id": "063",
+                "name": "Kyzyltepa district",
+                "pickUpPoint": "063"
+            },
+            {
+                "id": "066",
+                "name": "Khatyrchi's district",
+                "pickUpPoint": "066"
+            },
+            {
+                "id": "064",
+                "name": "Navbakhor district",
+                "pickUpPoint": "064"
+            },
+            {
+                "id": "065",
+                "name": "Nurata district",
+                "pickUpPoint": "065"
+            },
+            {
+                "id": "067",
+                "name": "Tamdy's district",
+                "pickUpPoint": "067"
+            },
+            {
+                "id": "211",
+                "name": "Uchkuduk district",
+                "pickUpPoint": "211"
+            },
+            {
+                "id": "224",
+                "name": "Gazgan (city)",
+                "pickUpPoint": "224"
+            }
+        ]
+    },
+    {
+       "countryName": "Namangan Region",
+        "countryCode": "14",
+        "regions": [
+            {
+                "id": "068",
+                "name": "Namangan (city)",
+                "pickUpPoint": "068"
+            },
+            {
+                "id": "070",
+                "name": "Kasansay district",
+                "pickUpPoint": "070"
+            },
+            {
+                "id": "069",
+                "name": "Mingbulak district",
+                "pickUpPoint": "069"
+            },
+            {
+                "id": "078",
+                "name": "Namangan district",
+                "pickUpPoint": "078"
+            },
+            {
+                "id": "071",
+                "name": "Naryn district",
+                "pickUpPoint": "071"
+            },
+            {
+                "id": "072",
+                "name": "Papa's District",
+                "pickUpPoint": "072"
+            },
+            {
+                "id": "073",
+                "name": "Turakurgan district",
+                "pickUpPoint": "073"
+            },
+            {
+                "id": "074",
+                "name": "Uychi district",
+                "pickUpPoint": "074"
+            },
+            {
+                "id": "075",
+                "name": "Uchkurgan district",
+                "pickUpPoint": "075"
+            },
+            {
+                "id": "079",
+                "name": "Chartak district",
+                "pickUpPoint": "079"
+            },
+            {
+                "id": "076",
+                "name": "Chust district",
+                "pickUpPoint": "076"
+            },
+            {
+                "id": "077",
+                "name": "Yangikurgan district",
+                "pickUpPoint": "077"
+            }
+        ]
+    },
+    {
+        "countryName": "Samarkand Region",
+        "countryCode": "18",
+        "regions": [
+            {
+                "id": "096",
+                "name": "Samarkand (city)",
+                "pickUpPoint": "096"
+            },
+            {
+                "id": "097",
+                "name": "Kattakurgan (city)",
+                "pickUpPoint": "097"
+            },
+            {
+                "id": "081",
+                "name": "Bulungur district",
+                "pickUpPoint": "081"
+            },
+            {
+                "id": "082",
+                "name": "Guzalkent district",
+                "pickUpPoint": "082"
+            },
+            {
+                "id": "084",
+                "name": "Ishtykhan's district",
+                "pickUpPoint": "084"
+            },
+            {
+                "id": "083",
+                "name": "Dzhambay district",
+                "pickUpPoint": "083"
+            },
+            {
+                "id": "085",
+                "name": "Kattakurgan district",
+                "pickUpPoint": "085"
+            },
+            {
+                "id": "086",
+                "name": "Koshrabad district",
+                "pickUpPoint": "086"
+            },
+            {
+                "id": "087",
+                "name": "Narpay district",
+                "pickUpPoint": "087"
+            },
+            {
+                "id": "088",
+                "name": "Nurabad district",
+                "pickUpPoint": "088"
+            },
+            {
+                "id": "089",
+                "name": "Pastdargom's district",
+                "pickUpPoint": "089"
+            },
+            {
+                "id": "080",
+                "name": "Akdarya district",
+                "pickUpPoint": "080"
+            },
+            {
+                "id": "090",
+                "name": "Pakhtachiy district",
+                "pickUpPoint": "090"
+            },
+            {
+                "id": "091",
+                "name": "Payaryk district",
+                "pickUpPoint": "091"
+            },
+            {
+                "id": "092",
+                "name": "Samarkand district",
+                "pickUpPoint": "092"
+            },
+            {
+                "id": "093",
+                "name": "Taylak district",
+                "pickUpPoint": "093"
+            },
+            {
+                "id": "095",
+                "name": "Chelek region",
+                "pickUpPoint": "095"
+            },
+            {
+                "id": "094",
+                "name": "Urgut district",
+                "pickUpPoint": "094"
+            },
+            {
+                "id": "215",
+                "name": "Temiryul's district",
+                "pickUpPoint": "215"
+            },
+            {
+                "id": "218",
+                "name": "Aktash (city)",
+                "pickUpPoint": "218"
+            },
+            {
+                "id": "219",
+                "name": "Urgut (city)",
+                "pickUpPoint": "219"
+            }
+        ]
+    },
+    {
+        "countryName": "Surkhandarya Region",
+        "countryCode": "22",
+        "regions": [
+            {
+                "id": "098",
+                "name": "Termez (city)",
+                "pickUpPoint": "098"
+            },
+            {
+                "id": "105",
+                "name": "Uzun district",
+                "pickUpPoint": "105"
+            },
+            {
+                "id": "104",
+                "name": "Shurchin's district",
+                "pickUpPoint": "104"
+            },
+            {
+                "id": "103",
+                "name": "Sherabad district",
+                "pickUpPoint": "103"
+            },
+            {
+                "id": "106",
+                "name": "Sarias district",
+                "pickUpPoint": "106"
+            },
+            {
+                "id": "111",
+                "name": "Altynsay district",
+                "pickUpPoint": "111"
+            },
+            {
+                "id": "112",
+                "name": "Bandikhan district",
+                "pickUpPoint": "112"
+            },
+            {
+                "id": "102",
+                "name": "Muzrabad district",
+                "pickUpPoint": "102"
+            },
+            {
+                "id": "110",
+                "name": "Termez district",
+                "pickUpPoint": "110"
+            },
+            {
+                "id": "109",
+                "name": "Kumkurgan district",
+                "pickUpPoint": "109"
+            },
+            {
+                "id": "108",
+                "name": "Kiziriki district",
+                "pickUpPoint": "108"
+            },
+            {
+                "id": "107",
+                "name": "Angora district",
+                "pickUpPoint": "107"
+            },
+            {
+                "id": "101",
+                "name": "Jarkurgan district",
+                "pickUpPoint": "101"
+            },
+            {
+                "id": "100",
+                "name": "Denau district",
+                "pickUpPoint": "100"
+            },
+            {
+                "id": "099",
+                "name": "Baysun district",
+                "pickUpPoint": "099"
+            }
+        ]
+    },
+    {
+      "countryName": "Syrdarya Region",
+        "countryCode": "24",
+        "regions": [
+            {
+                "id": "113",
+                "name": "Bakht (city)",
+                "pickUpPoint": "113"
+            },
+            {
+                "id": "114",
+                "name": "Gulistan (city)",
+                "pickUpPoint": "114"
+            },
+            {
+                "id": "115",
+                "name": "Yangier (city)",
+                "pickUpPoint": "115"
+            },
+            {
+                "id": "116",
+                "name": "Shirin (city)",
+                "pickUpPoint": "116"
+            },
+            {
+                "id": "117",
+                "name": "Syrdarya (city)",
+                "pickUpPoint": "117"
+            },
+            {
+                "id": "122",
+                "name": "Syrdarya district",
+                "pickUpPoint": "122"
+            },
+            {
+                "id": "123",
+                "name": "Saikhunabad district",
+                "pickUpPoint": "123"
+            },
+            {
+                "id": "121",
+                "name": "Sardob district",
+                "pickUpPoint": "121"
+            },
+            {
+                "id": "126",
+                "name": "Mirzaabad district",
+                "pickUpPoint": "126"
+            },
+            {
+                "id": "125",
+                "name": "Mekhnatabad district",
+                "pickUpPoint": "125"
+            },
+            {
+                "id": "124",
+                "name": "Khavast district",
+                "pickUpPoint": "124"
+            },
+            {
+                "id": "120",
+                "name": "Gulistan district",
+                "pickUpPoint": "120"
+            },
+            {
+                "id": "119",
+                "name": "Bayaut's district",
+                "pickUpPoint": "119"
+            },
+            {
+                "id": "118",
+                "name": "Akaltyn's district",
+                "pickUpPoint": "118"
+            }
+        ]
+    },
+    {
+        "countryName": "City of Tashkent",
+        "countryCode": "26",
+        "regions": [
+
+            {
+                "id": "208",
+                "name": "Chilanzar district",
+                "pickUpPoint": "208"
+            },
+            {
+                "id": "207",
+                "name": "Yashnabad district",
+                "pickUpPoint": "207"
+            },
+            {
+                "id": "199",
+                "name": "Bektemir district",
+                "pickUpPoint": "199"
+            },
+            {
+                "id": "205",
+                "name": "Sergeli district",
+                "pickUpPoint": "205"
+            },
+            {
+                "id": "198",
+                "name": "Uchtepa district",
+                "pickUpPoint": "198"
+            },
+            {
+                "id": "202",
+                "name": "Mirabad district",
+                "pickUpPoint": "202"
+            },
+            {
+                "id": "206",
+                "name": "Yakkasaray district",
+                "pickUpPoint": "206"
+            },
+            {
+                "id": "204",
+                "name": "Almazar district",
+                "pickUpPoint": "204"
+            },
+            {
+                "id": "203",
+                "name": "Shaykhantakhur district",
+                "pickUpPoint": "203"
+            },
+            {
+                "id": "201",
+                "name": "Mirzo-Ulugbek district",
+                "pickUpPoint": "201"
+            },
+            {
+                "id": "200",
+                "name": "Yunusabad district",
+                "pickUpPoint": "200"
+            },
+            {
+                "id": "227",
+                "name": "Yangikhayot District",
+                "pickUpPoint": "227"
+            }
+        ]
+    },
+    {
+        "countryName": "Tashkent Region",
+        "countryCode": "27",
+        "regions": [
+            {
+                "id": "127",
+                "name": "Akhangaran (city)",
+                "pickUpPoint": "127"
+            },
+            {
+                "id": "147",
+                "name": "Yangiyul (city)",
+                "pickUpPoint": "147"
+            },
+            {
+                "id": "128",
+                "name": "Almalyk (city)",
+                "pickUpPoint": "128"
+            },
+            {
+                "id": "130",
+                "name": "Bekabad (city)",
+                "pickUpPoint": "130"
+            },
+            {
+                "id": "129",
+                "name": "Angren (city)",
+                "pickUpPoint": "129"
+            },
+            {
+                "id": "131",
+                "name": "Chirchik (city)",
+                "pickUpPoint": "131"
+            },
+            {
+                "id": "145",
+                "name": "Yukorichirchik district",
+                "pickUpPoint": "145"
+            },
+            {
+                "id": "142",
+                "name": "Tashkent region",
+                "pickUpPoint": "142"
+            },
+            {
+                "id": "146",
+                "name": "Yangiyul district",
+                "pickUpPoint": "146"
+            },
+            {
+                "id": "143",
+                "name": "Urtachirchik district",
+                "pickUpPoint": "143"
+            },
+            {
+                "id": "140",
+                "name": "Kuyichirchik district",
+                "pickUpPoint": "140"
+            },
+            {
+                "id": "141",
+                "name": "Pskentsky district",
+                "pickUpPoint": "141"
+            },
+            {
+                "id": "139",
+                "name": "Parkent district",
+                "pickUpPoint": "139"
+            },
+            {
+                "id": "132",
+                "name": "Akkurgan district",
+                "pickUpPoint": "132"
+            },
+            {
+                "id": "133",
+                "name": "Akhangaran district",
+                "pickUpPoint": "133"
+            },
+            {
+                "id": "138",
+                "name": "Kibray district",
+                "pickUpPoint": "138"
+            },
+            {
+                "id": "144",
+                "name": "Chinaz district",
+                "pickUpPoint": "144"
+            },
+            {
+                "id": "135",
+                "name": "Buka district",
+                "pickUpPoint": "135"
+            },
+            {
+                "id": "134",
+                "name": "Bostanlyk district",
+                "pickUpPoint": "134"
+            },
+            {
+                "id": "137",
+                "name": "Bekabad district",
+                "pickUpPoint": "137"
+            },
+            {
+                "id": "136",
+                "name": "Zangiota district",
+                "pickUpPoint": "136"
+            },
+            {
+                "id": "223",
+                "name": "Nurafshan (city)",
+                "pickUpPoint": "223"
+            }
+        ]
+    },
+    {
+       "countryName": "Fergana region",
+        "countryCode": "30",
+        "regions": [
+            {
+                "id": "148",
+                "name": "Kokand (city)",
+                "pickUpPoint": "148"
+            },
+            {
+                "id": "149",
+                "name": "Margilan (city)",
+                "pickUpPoint": "149"
+            },
+            {
+                "id": "150",
+                "name": "Fergana (city)",
+                "pickUpPoint": "150"
+            },
+            {
+                "id": "151",
+                "name": "Kuvasay (city)",
+                "pickUpPoint": "151"
+            },
+            {
+                "id": "156",
+                "name": "Yazyavan's district",
+                "pickUpPoint": "156"
+            },
+            {
+                "id": "163",
+                "name": "Uzbekistan district",
+                "pickUpPoint": "163"
+            },
+            {
+                "id": "164",
+                "name": "Uchkuprik district",
+                "pickUpPoint": "164"
+            },
+            {
+                "id": "162",
+                "name": "Tashlak district",
+                "pickUpPoint": "162"
+            },
+            {
+                "id": "161",
+                "name": "Sokh district",
+                "pickUpPoint": "161"
+            },
+            {
+                "id": "160",
+                "name": "Rishtan district",
+                "pickUpPoint": "160"
+            },
+            {
+                "id": "157",
+                "name": "Kuvin's district",
+                "pickUpPoint": "157"
+            },
+            {
+                "id": "159",
+                "name": "Kushtepa's district",
+                "pickUpPoint": "159"
+            },
+            {
+                "id": "167",
+                "name": "Kirguli district",
+                "pickUpPoint": "167"
+            },
+            {
+                "id": "166",
+                "name": "Furkat district",
+                "pickUpPoint": "166"
+            },
+            {
+                "id": "165",
+                "name": "Fergana district",
+                "pickUpPoint": "165"
+            },
+            {
+                "id": "155",
+                "name": "Dangara district",
+                "pickUpPoint": "155"
+            },
+            {
+                "id": "154",
+                "name": "Buvaidin district",
+                "pickUpPoint": "154"
+            },
+            {
+                "id": "152",
+                "name": "Besharyk district",
+                "pickUpPoint": "152"
+            },
+            {
+                "id": "153",
+                "name": "Baghdad district",
+                "pickUpPoint": "153"
+            },
+            {
+                "id": "158",
+                "name": "Altyaryk district",
+                "pickUpPoint": "158"
+            }
+        ]
+    },
+    {
+        "countryName": "Kharezm Region",
+        "countryCode": "33",
+        "regions": [
+            {
+                "id": "168",
+                "name": "Urgench (city)",
+                "pickUpPoint": "168"
+            },
+            {
+                "id": "170",
+                "name": "Pintak (city)",
+                "pickUpPoint": "170"
+            },
+            {
+                "id": "179",
+                "name": "Yangibazar district",
+                "pickUpPoint": "179"
+            },
+            {
+                "id": "175",
+                "name": "Yangiaryk district",
+                "pickUpPoint": "175"
+            },
+            {
+                "id": "178",
+                "name": "Urgench region",
+                "pickUpPoint": "178"
+            },
+            {
+                "id": "177",
+                "name": "Shavat's district",
+                "pickUpPoint": "177"
+            },
+            {
+                "id": "176",
+                "name": "Koshkupyr district",
+                "pickUpPoint": "176"
+            },
+            {
+                "id": "169",
+                "name": "Khiva (city)",
+                "pickUpPoint": "169"
+            },
+            {
+                "id": "173",
+                "name": "Khazarasp district",
+                "pickUpPoint": "173"
+            },
+            {
+                "id": "174",
+                "name": "Khanka district",
+                "pickUpPoint": "174"
+            },
+            {
+                "id": "171",
+                "name": "Gurlen's district",
+                "pickUpPoint": "171"
+            },
+            {
+                "id": "172",
+                "name": "Bagat's district",
+                "pickUpPoint": "172"
+            },
+            {
+                "id": "212",
+                "name": "Khiva district",
+                "pickUpPoint": "212"
+            },
+            {
+                "id": "226",
+                "name": "Tuprokkal district",
+                "pickUpPoint": "226"
+            }
+        ]
+    },
+    {
+       "countryName": "Republic of Karakalpakstan",
+        "countryCode": "35",
+        "regions": [
+            {
+                "id": "181",
+                "name": "Tahiyatash (city)",
+                "pickUpPoint": "181"
+            },
+            {
+                "id": "180",
+                "name": "Nukus (city)",
+                "pickUpPoint": "180"
+            },
+            {
+                "id": "192",
+                "name": "Kanlykul district",
+                "pickUpPoint": "192"
+            },
+            {
+                "id": "182",
+                "name": "Kegeyli district",
+                "pickUpPoint": "182"
+            },
+            {
+                "id": "190",
+                "name": "Chimbay district",
+                "pickUpPoint": "190"
+            },
+            {
+                "id": "193",
+                "name": "Karauzyak district",
+                "pickUpPoint": "193"
+            },
+            {
+                "id": "195",
+                "name": "Bozatau district",
+                "pickUpPoint": "195"
+            },
+            {
+                "id": "196",
+                "name": "Mangit's district",
+                "pickUpPoint": "196"
+            },
+            {
+                "id": "188",
+                "name": "Turtkul district",
+                "pickUpPoint": "188"
+            },
+            {
+                "id": "194",
+                "name": "Ellikkala district",
+                "pickUpPoint": "194"
+            },
+            {
+                "id": "191",
+                "name": "Beruni district",
+                "pickUpPoint": "191"
+            },
+            {
+                "id": "189",
+                "name": "Khodzheli district",
+                "pickUpPoint": "189"
+            },
+            {
+                "id": "187",
+                "name": "Takhtakupyr district",
+                "pickUpPoint": "187"
+            },
+            {
+                "id": "183",
+                "name": "Shumanai district",
+                "pickUpPoint": "183"
+            },
+            {
+                "id": "185",
+                "name": "Muynak district",
+                "pickUpPoint": "185"
+            },
+            {
+                "id": "186",
+                "name": "Akmangyt district",
+                "pickUpPoint": "186"
+            },
+            {
+                "id": "184",
+                "name": "Kungrad district",
+                "pickUpPoint": "184"
+            },
+            {
+                "id": "209",
+                "name": "Amudarya district",
+                "pickUpPoint": "209"
+            },
+            {
+                "id": "216",
+                "name": "Nukus district",
+                "pickUpPoint": "216"
+            },
+            {
+                "id": "222",
+                "name": "Takhiatash district",
+                "pickUpPoint": "222"
+            },
+            {
+                "id": "225",
+                "name": "Buzatov's district",
+                "pickUpPoint": "225"
+            }
+        ]
+    }
+]

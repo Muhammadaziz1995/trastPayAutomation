@@ -63,6 +63,7 @@ def create_testing_process_and_log_file(test_suites):
         logFile.write("\n".join(log_results))
         logFile.close()
 
+
 #
 if __name__ == '__main__':
     if sys.argv[1] == 'full_coverage':

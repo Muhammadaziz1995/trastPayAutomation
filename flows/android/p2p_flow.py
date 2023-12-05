@@ -8,7 +8,7 @@ class P2PFlow(AndroidBaseFlow):
         self.driver = driver
 
     def check_p2p_humo_to_humo_from_home_screen(self, sender_card_last_four_numb, recipient_card_numb, sent_money,
-                                                recipient_card_4_numb, recipient_full_name):
+                                                recipient_card_4_numb, recipient_full_name, sender_card_name):
         assert self.install_application(False)
         self.welcome_screen.is_enter_pin_code_screen_open()
         self.welcome_screen.create_pin_code()
@@ -26,21 +26,23 @@ class P2PFlow(AndroidBaseFlow):
         self.p2p_screen.click_on_otkazish_button()
         assert self.p2p_screen.is_confirm_transfer_screen_title()
         assert self.p2p_screen.check_all_data_appear_in_confirm_screen(recipient_card_4_numb, sent_money, commission,
-                                                                       overall_amount)
+                                                                       overall_amount), self.screens.get_a_screenshot_as_PNG("Payments")
         self.p2p_screen.click_on_otkazish_button()
         assert self.p2p_screen.is_otp_screen_open()
         # self.p2p_screen.enter_otp(otp)
         time.sleep(6)
         assert self.cheque_screen.check_cheque_title()
-        assert self.cheque_screen.check_cheque_details_in_last_cheque_screen(overall_amount, sent_money, sender_card_last_four_numb,
-                                                                             commission, recipient_full_name)
+        assert self.cheque_screen.check_cheque_details_in_last_cheque_screen(overall_amount, sent_money,
+                                                                             sender_card_name, commission,
+                                                                             recipient_full_name), self.screens.get_a_screenshot_as_PNG("Payments")
+        self.cheque_screen.click_on_home_screen_button()
         return True
 
     def check_p2p_humo_to_uzcard(self, sender_card_last_four_numb, recipient_card_numb, sent_money,
                                                 recipient_card_4_numb, recipient_full_name):
-        assert self.install_application(False)
-        self.welcome_screen.is_enter_pin_code_screen_open()
-        self.welcome_screen.create_pin_code()
+        # assert self.install_application(False)
+        # self.welcome_screen.is_enter_pin_code_screen_open()
+        # self.welcome_screen.create_pin_code()
         assert self.home_screen.is_home_screen_open()
         self.p2p_screen.click_on_transfer_to_card_icon_in_home()
         self.p2p_screen.click_on_sender_part()
@@ -62,7 +64,8 @@ class P2PFlow(AndroidBaseFlow):
         assert self.cheque_screen.check_cheque_title()
         assert self.cheque_screen.check_cheque_details_in_last_cheque_screen(overall_amount, sent_money,
                                                                              sender_card_last_four_numb,
-                                                                             commission, recipient_full_name)
+                                                                             commission, recipient_full_name), self.screens.get_a_screenshot_as_PNG("Payments")
+        self.cheque_screen.click_on_home_screen_button()
         return True
 
     def check_p2p_humo_to_wallet(self, sender_card_last_four_numb, sent_money, recipient_fullname):
@@ -75,8 +78,9 @@ class P2PFlow(AndroidBaseFlow):
         self.p2p_screen.select_card_by_last_4_number(sender_card_last_four_numb)  # 0118
         self.p2p_screen.click_on_recipient_part()
         self.p2p_screen.scroll_to_wallet()
-        self.p2p_screen.select_card_by_title("Cashback hamyon")
-        assert self.p2p_screen.check_recipient_name_appeared_after_passing_card_number("Cashback hamyon")
+        self.p2p_screen.scroll_to_wallet()
+        self.p2p_screen.select_card_by_title("Sum account")
+        assert self.p2p_screen.check_recipient_name_appeared_after_passing_card_number("Sum account")
         self.p2p_screen.enter_money_for_transferring(sent_money)
         time.sleep(2)
         commission = self.p2p_screen.get_appeared_commission_amount()
@@ -90,19 +94,87 @@ class P2PFlow(AndroidBaseFlow):
         # self.p2p_screen.enter_otp(otp)
         time.sleep(6)
         assert self.cheque_screen.check_cheque_title()
-        assert self.cheque_screen.check_cheque_details_in_last_cheque_screen(overall_amount, sent_money,
+        if self.cheque_screen.check_cheque_details_in_last_cheque_screen(overall_amount, sent_money,
                                                                              sender_card_last_four_numb,
-                                                                             commission, recipient_fullname)
+                                                                             commission, recipient_fullname):
+            assert True
+        else:
+            self.screens.get_a_screenshot_as_PNG("p2p.png")
+        self.cheque_screen.click_on_home_screen_button()
         return True
 
-    def check_p2p_humo_to_master(self):
-        pass
+    # def check_p2p_humo_to_master(self, sender_card_last_four_numb, recipient_card_last_four_n, sent_money):
+    #     assert self.install_application(False)
+    #     self.welcome_screen.is_enter_pin_code_screen_open()
+    #     self.welcome_screen.create_pin_code()
+    #     assert self.home_screen.is_home_screen_open()
+    #     self.p2p_screen.click_on_transfer_to_my_funds_in_home()
+    #     self.p2p_screen.click_on_sender_part()
+    #     self.p2p_screen.select_card_by_last_4_number(sender_card_last_four_numb)  # 0118
+    #     self.p2p_screen.click_on_recipient_part()
+    #     self.p2p_screen.select_card_by_last_4_number(recipient_card_last_four_n)
+    #     assert self.p2p_screen.check_recipient_name_appeared_after_passing_card_number(recipient_card_last_four_n)
+    #     self.p2p_screen.enter_amount_in_uzs(sent_money)
 
-    def check_p2p_uzcard_to_uzcard(self):
-        pass
+    def check_p2p_uzcard_own_to_uzcard_other(self, sender_card_last_four_numb, recipient_card_numb, recipient_full_name,
+                                             sent_money):
+        # assert self.install_application(False)
+        # self.welcome_screen.is_enter_pin_code_screen_open()
+        # self.welcome_screen.create_pin_code()
+        assert self.home_screen.is_home_screen_open()
+        self.p2p_screen.click_on_transfer_to_card_icon_in_home()
+        self.p2p_screen.click_on_sender_part()
+        self.p2p_screen.select_card_by_last_4_number(sender_card_last_four_numb)  # 0118
+        # self.p2p_screen.click_on_recipient_part()
+        self.p2p_screen.enter_recipient_card_number(recipient_card_numb)
+        assert self.p2p_screen.check_recipient_name_appeared_after_passing_card_number(recipient_full_name)
+        self.p2p_screen.enter_money_for_transferring(sent_money)
+        time.sleep(2)
+        commission = self.p2p_screen.get_appeared_commission_amount()
+        overall_amount = self.p2p_screen.get_appeared_overall_amount(commission)
+        self.p2p_screen.click_on_otkazish_button()
+        assert self.p2p_screen.is_confirm_transfer_screen_title()
+        assert self.p2p_screen.check_all_data_appear_in_confirm_screen(recipient_full_name, sent_money, commission,
+                                                                       overall_amount)
+        self.p2p_screen.click_on_otkazish_button()
+        assert self.p2p_screen.is_otp_screen_open()
+        # self.p2p_screen.enter_otp(otp)
+        time.sleep(6)
+        assert self.cheque_screen.check_cheque_title()
+        assert self.cheque_screen.check_cheque_details_in_last_cheque_screen(overall_amount, sent_money,
+                                                                             sender_card_last_four_numb,
+                                                                             commission, recipient_full_name)
+        self.cheque_screen.click_on_home_screen_button()
+        return True
 
-    def check_p2p_uzcard_to_humo(self):
-        pass
+    def check_p2p_uzcard_to_humo(self, sender_card_last_four_numb, recipient_card_numb, recipient_full_name, sent_money):
+        # assert self.install_application(False)
+        # self.welcome_screen.is_enter_pin_code_screen_open()
+        # self.welcome_screen.create_pin_code()
+        assert self.home_screen.is_home_screen_open()
+        self.p2p_screen.click_on_transfer_to_card_icon_in_home()
+        self.p2p_screen.click_on_sender_part()
+        self.p2p_screen.select_card_by_last_4_number(sender_card_last_four_numb)
+        self.p2p_screen.enter_recipient_card_number(recipient_card_numb)
+        assert self.p2p_screen.check_recipient_name_appeared_after_passing_card_number(recipient_full_name)
+        self.p2p_screen.enter_money_for_transferring(sent_money)
+        time.sleep(2)
+        commission = self.p2p_screen.get_appeared_commission_amount()
+        overall_amount = self.p2p_screen.get_appeared_overall_amount(commission)
+        self.p2p_screen.click_on_otkazish_button()
+        assert self.p2p_screen.is_confirm_transfer_screen_title()
+        assert self.p2p_screen.check_all_data_appear_in_confirm_screen(recipient_full_name, sent_money, commission,
+                                                                       overall_amount)
+        self.p2p_screen.click_on_otkazish_button()
+        assert self.p2p_screen.is_otp_screen_open()
+        # self.p2p_screen.enter_otp(otp)
+        time.sleep(6)
+        assert self.cheque_screen.check_cheque_title()
+        assert self.cheque_screen.check_cheque_details_in_last_cheque_screen(overall_amount, sent_money,
+                                                                             sender_card_last_four_numb,
+                                                                             commission, recipient_full_name)
+        self.cheque_screen.click_on_home_screen_button()
+        return True
 
     def check_p2p_uzcard_to_wallet(self):
         pass

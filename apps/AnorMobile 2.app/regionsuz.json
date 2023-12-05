@@ -1,0 +1,1217 @@
+[
+    {
+       "countryName": "Andijon viloyati",
+        "countryCode": "03",
+        "regions": [
+            {
+                "id": "001",
+                "name": "Andijon (shahar)",
+                "pickUpPoint": "001"
+            },
+            {
+                "id": "002",
+                "name": "Asaka (shahar)",
+                "pickUpPoint": "002"
+            },
+            {
+                "id": "003",
+                "name": "Xonobod (shahar)",
+                "pickUpPoint": "003"
+            },
+            {
+                "id": "004",
+                "name": "Qorasu (shahar)",
+                "pickUpPoint": "004"
+            },
+            {
+                "id": "005",
+                "name": "Shaxrixon (shahar)",
+                "pickUpPoint": "005"
+            },
+            {
+                "id": "006",
+                "name": "Andijon tumani",
+                "pickUpPoint": "006"
+            },
+            {
+                "id": "007",
+                "name": "Asaka tumani",
+                "pickUpPoint": "007"
+            },
+            {
+                "id": "008",
+                "name": "Baliqchi tumani",
+                "pickUpPoint": "008"
+            },
+            {
+                "id": "009",
+                "name": "Bo'z tumani",
+                "pickUpPoint": "009"
+            },
+            {
+                "id": "010",
+                "name": "Buloqboshi tumani",
+                "pickUpPoint": "010"
+            },
+            {
+                "id": "011",
+                "name": "Jalolquduq tumani",
+                "pickUpPoint": "011"
+            },
+            {
+                "id": "012",
+                "name": "Izboskan tumani",
+                "pickUpPoint": "012"
+            },
+            {
+                "id": "013",
+                "name": "Komsomolobod tumani",
+                "pickUpPoint": "013"
+            },
+            {
+                "id": "014",
+                "name": "Qo'rg'ontepa tumani",
+                "pickUpPoint": "014"
+            },
+            {
+                "id": "015",
+                "name": "Marxamatskiy tumani",
+                "pickUpPoint": "015"
+            },
+            {
+                "id": "016",
+                "name": "Oltinko'l tumani",
+                "pickUpPoint": "016"
+            },
+            {
+                "id": "017",
+                "name": "Paxtaobod tumani",
+                "pickUpPoint": "017"
+            },
+            {
+                "id": "018",
+                "name": "Xo'jaobod tumani",
+                "pickUpPoint": "018"
+            },
+            {
+                "id": "210",
+                "name": "Ulug'nor tumani",
+                "pickUpPoint": "210"
+            },
+            {
+                "id": "214",
+                "name": "Shaxrixon tumani",
+                "pickUpPoint": "214"
+            }
+        ]
+    },
+    {
+        "countryName": "Buxoro viloyati",
+        "countryCode": "06",
+        "regions": [
+            {
+                "id": "030",
+                "name": "Buxoro (shahar)",
+                "pickUpPoint": "030"
+            },
+            {
+                "id": "019",
+                "name": "Olot tumani",
+                "pickUpPoint": "019"
+            },
+            {
+                "id": "022",
+                "name": "Buxoro tumani",
+                "pickUpPoint": "022"
+            },
+            {
+                "id": "021",
+                "name": "G'ijduvon tumani",
+                "pickUpPoint": "021"
+            },
+            {
+                "id": "025",
+                "name": "Jondor tumani",
+                "pickUpPoint": "025"
+            },
+            {
+                "id": "029",
+                "name": "Kogon tumani",
+                "pickUpPoint": "029"
+            },
+            {
+                "id": "023",
+                "name": "Qorako'l tumani",
+                "pickUpPoint": "023"
+            },
+            {
+                "id": "028",
+                "name": "Qoraulbozor tumani",
+                "pickUpPoint": "028"
+            },
+            {
+                "id": "027",
+                "name": "Peshku tumani",
+                "pickUpPoint": "027"
+            },
+            {
+                "id": "024",
+                "name": "Romitan tumani",
+                "pickUpPoint": "024"
+            },
+            {
+                "id": "026",
+                "name": "Shofirkon tumani",
+                "pickUpPoint": "026"
+            },
+            {
+                "id": "020",
+                "name": "Vobkent tumani",
+                "pickUpPoint": "020"
+            },
+            {
+                "id": "220",
+                "name": "Kogon (shahar)",
+                "pickUpPoint": "220"
+            }
+        ]
+    },
+    {
+        "countryName": "Jizzax viloyati",
+        "countryCode": "08",
+        "regions": [
+            {
+                "id": "031",
+                "name": "Jizzax (shahar)",
+                "pickUpPoint": "031"
+            },
+            {
+                "id": "041",
+                "name": "Aranasoy tumani",
+                "pickUpPoint": "041"
+            },
+            {
+                "id": "037",
+                "name": "Baxmal tumani",
+                "pickUpPoint": "037"
+            },
+            {
+                "id": "034",
+                "name": "Do'stlik tumani",
+                "pickUpPoint": "034"
+            },
+            {
+                "id": "038",
+                "name": "Forish tumani",
+                "pickUpPoint": "038"
+            },
+            {
+                "id": "033",
+                "name": "G'allaorol tumani",
+                "pickUpPoint": "033"
+            },
+            {
+                "id": "040",
+                "name": "Sharaf Rashidov tumani",
+                "pickUpPoint": "040"
+            },
+            {
+                "id": "035",
+                "name": "Mirzacho'l tumani",
+                "pickUpPoint": "035"
+            },
+            {
+                "id": "032",
+                "name": "Paxtakor viloyati",
+                "pickUpPoint": "032"
+            },
+            {
+                "id": "217",
+                "name": "Yangiobod tumani",
+                "pickUpPoint": "217"
+            },
+            {
+                "id": "036",
+                "name": "Zomin tumani",
+                "pickUpPoint": "036"
+            },
+            {
+                "id": "039",
+                "name": "Zafarobod tumani",
+                "pickUpPoint": "039"
+            },
+            {
+                "id": "042",
+                "name": "Zarbdor tumani",
+                "pickUpPoint": "042"
+            }
+        ]
+    },
+    {
+        "countryName": "Qashqadaryo viloyati",
+        "countryCode": "10",
+        "regions": [
+            {
+                "id": "043",
+                "name": "Qarshi (shahar)",
+                "pickUpPoint": "043"
+            },
+            {
+                "id": "050",
+                "name": "Chiroqchi tumani",
+                "pickUpPoint": "050"
+            },
+            {
+                "id": "046",
+                "name": "Dehqonobod tumani",
+                "pickUpPoint": "046"
+            },
+            {
+                "id": "045",
+                "name": "Guzor tumani",
+                "pickUpPoint": "045"
+            },
+            {
+                "id": "047",
+                "name": "Qamashin tumani",
+                "pickUpPoint": "047"
+            },
+            {
+                "id": "044",
+                "name": "Qarshi tumani",
+                "pickUpPoint": "044"
+            },
+            {
+                "id": "048",
+                "name": "Koson tumani",
+                "pickUpPoint": "048"
+            },
+            {
+                "id": "053",
+                "name": "Kesbi tumani",
+                "pickUpPoint": "053"
+            },
+            {
+                "id": "052",
+                "name": "Kitob tumani",
+                "pickUpPoint": "052"
+            },
+            {
+                "id": "221",
+                "name": "Mirishkar tumani",
+                "pickUpPoint": "221"
+            },
+            {
+                "id": "056",
+                "name": "Muborak tumani",
+                "pickUpPoint": "056"
+            },
+            {
+                "id": "054",
+                "name": "Nishon tumani",
+                "pickUpPoint": "054"
+            },
+            {
+                "id": "057",
+                "name": "Baxariston tumani",
+                "pickUpPoint": "057"
+            },
+            {
+                "id": "049",
+                "name": "Shaxrisabz (shahar)",
+                "pickUpPoint": "049"
+            },
+            {
+                "id": "055",
+                "name": "U.Yusupovskiy tumani",
+                "pickUpPoint": "055"
+            },
+            {
+                "id": "051",
+                "name": "Yakkabog' tumani",
+                "pickUpPoint": "051"
+            },
+            {
+                "id": "213",
+                "name": "Shaxrisabz tumani",
+                "pickUpPoint": "213"
+            }
+        ]
+    },
+    {
+        "countryName": "Navoiy viloyati",
+        "countryCode": "12",
+        "regions": [
+            {
+                "id": "058",
+                "name": "Navoiy (shahar)",
+                "pickUpPoint": "058"
+            },
+            {
+                "id": "059",
+                "name": "Zarafshon (shahar)",
+                "pickUpPoint": "059"
+            },
+            {
+                "id": "060",
+                "name": "Uchquduq (shahar)",
+                "pickUpPoint": "060"
+            },
+            {
+                "id": "062",
+                "name": "Konimex tumani",
+                "pickUpPoint": "062"
+            },
+            {
+                "id": "061",
+                "name": "Karmana tumani",
+                "pickUpPoint": "061"
+            },
+            {
+                "id": "063",
+                "name": "Qiziltepa tumani",
+                "pickUpPoint": "063"
+            },
+            {
+                "id": "066",
+                "name": "Xatirchi tumani",
+                "pickUpPoint": "066"
+            },
+            {
+                "id": "064",
+                "name": "Navbahor tumani",
+                "pickUpPoint": "064"
+            },
+            {
+                "id": "065",
+                "name": "Nurota tumani",
+                "pickUpPoint": "065"
+            },
+            {
+                "id": "067",
+                "name": "Tomdi tumani",
+                "pickUpPoint": "067"
+            },
+            {
+                "id": "211",
+                "name": "Uchquduq tumani",
+                "pickUpPoint": "211"
+            },
+            {
+                "id": "224",
+                "name": "Gazgan (shahar)",
+                "pickUpPoint": "224"
+            }
+        ]
+    },
+    {
+        "countryName": "Namangan viloyati",
+        "countryCode": "14",
+        "regions": [
+            {
+                "id": "068",
+                "name": "Namangan (shahar)",
+                "pickUpPoint": "068"
+            },
+            {
+                "id": "070",
+                "name": "Kosonsoy tumani",
+                "pickUpPoint": "070"
+            },
+            {
+                "id": "069",
+                "name": "Mingbuloq tumani",
+                "pickUpPoint": "069"
+            },
+            {
+                "id": "078",
+                "name": "Namangan tumani",
+                "pickUpPoint": "078"
+            },
+            {
+                "id": "071",
+                "name": "Norin tumani",
+                "pickUpPoint": "071"
+            },
+            {
+                "id": "072",
+                "name": "Papa tumani",
+                "pickUpPoint": "072"
+            },
+            {
+                "id": "073",
+                "name": "To'raqo'rg'on tumani",
+                "pickUpPoint": "073"
+            },
+            {
+                "id": "074",
+                "name": "Uychi tumani",
+                "pickUpPoint": "074"
+            },
+            {
+                "id": "075",
+                "name": "Uchqo'rg'on tumani",
+                "pickUpPoint": "075"
+            },
+            {
+                "id": "079",
+                "name": "Chortoq tumani",
+                "pickUpPoint": "079"
+            },
+            {
+                "id": "076",
+                "name": "Chust tumani",
+                "pickUpPoint": "076"
+            },
+            {
+                "id": "077",
+                "name": "Yangiqo'rg'on tumani",
+                "pickUpPoint": "077"
+            }
+        ]
+    },
+    {
+        "countryName": "Samarqand viloyati",
+        "countryCode": "18",
+        "regions": [
+            {
+                "id": "096",
+                "name": "Samarqand (shahar)",
+                "pickUpPoint": "096"
+            },
+            {
+                "id": "097",
+                "name": "Kattaqo'rg'on (shahar)",
+                "pickUpPoint": "097"
+            },
+            {
+                "id": "081",
+                "name": "Bulung'ur tumani",
+                "pickUpPoint": "081"
+            },
+            {
+                "id": "082",
+                "name": "Guzalkent tumani",
+                "pickUpPoint": "082"
+            },
+            {
+                "id": "084",
+                "name": "Ishtixon tumani",
+                "pickUpPoint": "084"
+            },
+            {
+                "id": "083",
+                "name": "Jambay tumani",
+                "pickUpPoint": "083"
+            },
+            {
+                "id": "085",
+                "name": "Kattaqo'rg'on tumani",
+                "pickUpPoint": "085"
+            },
+            {
+                "id": "086",
+                "name": "Qo'shrobod tumani",
+                "pickUpPoint": "086"
+            },
+            {
+                "id": "087",
+                "name": "Narpay tumani",
+                "pickUpPoint": "087"
+            },
+            {
+                "id": "088",
+                "name": "Nurobod tumani",
+                "pickUpPoint": "088"
+            },
+            {
+                "id": "089",
+                "name": "Pastdarg'om tumani",
+                "pickUpPoint": "089"
+            },
+            {
+                "id": "080",
+                "name": "Oqdaryo tumani",
+                "pickUpPoint": "080"
+            },
+            {
+                "id": "090",
+                "name": "Paxtachiy tumani",
+                "pickUpPoint": "090"
+            },
+            {
+                "id": "091",
+                "name": "Payariq tumani",
+                "pickUpPoint": "091"
+            },
+            {
+                "id": "092",
+                "name": "Samarqand tumani",
+                "pickUpPoint": "092"
+            },
+            {
+                "id": "093",
+                "name": "Tayloq tumani",
+                "pickUpPoint": "093"
+            },
+            {
+                "id": "095",
+                "name": "Chelek tumani",
+                "pickUpPoint": "095"
+            },
+            {
+                "id": "094",
+                "name": "Urgut tumani",
+                "pickUpPoint": "094"
+            },
+            {
+                "id": "215",
+                "name": "Temiryo'l tumani",
+                "pickUpPoint": "215"
+            },
+            {
+                "id": "218",
+                "name": "Oqtosh (shahar)",
+                "pickUpPoint": "218"
+            },
+            {
+                "id": "219",
+                "name": "Urgut (shahar)",
+                "pickUpPoint": "219"
+            }
+        ]
+    },
+    {
+        "countryName": "Surxondaryo viloyati",
+        "countryCode": "22",
+        "regions": [
+            {
+                "id": "098",
+                "name": "Termiz (shahar)",
+                "pickUpPoint": "098"
+            },
+            {
+                "id": "105",
+                "name": "Uzun tumani",
+                "pickUpPoint": "105"
+            },
+            {
+                "id": "104",
+                "name": "Sho'rchin tumani",
+                "pickUpPoint": "104"
+            },
+            {
+                "id": "103",
+                "name": "Sherobod tumani",
+                "pickUpPoint": "103"
+            },
+            {
+                "id": "106",
+                "name": "Sariosiyo tumani",
+                "pickUpPoint": "106"
+            },
+            {
+                "id": "111",
+                "name": "Oltinsoy tumani",
+                "pickUpPoint": "111"
+            },
+            {
+                "id": "112",
+                "name": "Bandixon tumani",
+                "pickUpPoint": "112"
+            },
+            {
+                "id": "102",
+                "name": "Muzrobod tumani",
+                "pickUpPoint": "102"
+            },
+            {
+                "id": "110",
+                "name": "Termiz tumani",
+                "pickUpPoint": "110"
+            },
+            {
+                "id": "109",
+                "name": "Qumqo'rg'on tumani",
+                "pickUpPoint": "109"
+            },
+            {
+                "id": "108",
+                "name": "Qiziriki tumani",
+                "pickUpPoint": "108"
+            },
+            {
+                "id": "107",
+                "name": "Angor tumani",
+                "pickUpPoint": "107"
+            },
+            {
+                "id": "101",
+                "name": "Jarqo'rg'on viloyati",
+                "pickUpPoint": "101"
+            },
+            {
+                "id": "100",
+                "name": "Denov tumani",
+                "pickUpPoint": "100"
+            },
+            {
+                "id": "099",
+                "name": "Boysun tumani",
+                "pickUpPoint": "099"
+            }
+        ]
+    },
+    {
+        "countryName": "Sirdaryo viloyati",
+        "countryCode": "24",
+        "regions": [
+            {
+                "id": "113",
+                "name": "Baxt (shahar)",
+                "pickUpPoint": "113"
+            },
+            {
+                "id": "114",
+                "name": "Guliston (shahar)",
+                "pickUpPoint": "114"
+            },
+            {
+                "id": "115",
+                "name": "Yangier (shahar)",
+                "pickUpPoint": "115"
+            },
+            {
+                "id": "116",
+                "name": "Shirin (shahar)",
+                "pickUpPoint": "116"
+            },
+            {
+                "id": "117",
+                "name": "Sirdaryo (shahar)",
+                "pickUpPoint": "117"
+            },
+            {
+                "id": "122",
+                "name": "Sirdaryo tumani",
+                "pickUpPoint": "122"
+            },
+            {
+                "id": "123",
+                "name": "Sayxunobod tumani",
+                "pickUpPoint": "123"
+            },
+            {
+                "id": "121",
+                "name": "Sardob tumani",
+                "pickUpPoint": "121"
+            },
+            {
+                "id": "126",
+                "name": "Mirzaobod tumani",
+                "pickUpPoint": "126"
+            },
+            {
+                "id": "125",
+                "name": "Mehnatobod tumani",
+                "pickUpPoint": "125"
+            },
+            {
+                "id": "124",
+                "name": "Xovost tumani",
+                "pickUpPoint": "124"
+            },
+            {
+                "id": "120",
+                "name": "Guliston tumani",
+                "pickUpPoint": "120"
+            },
+            {
+                "id": "119",
+                "name": "Boyovut tumani",
+                "pickUpPoint": "119"
+            },
+            {
+                "id": "118",
+                "name": "Oqoltin tumani",
+                "pickUpPoint": "118"
+            }
+        ]
+    },
+    {
+        "countryName": "Toshkent shahri",
+        "countryCode": "26",
+        "regions": [
+
+            {
+                "id": "208",
+                "name": "Chilonzor tumani",
+                "pickUpPoint": "208"
+            },
+            {
+                "id": "207",
+                "name": "Yashnobod tumani",
+                "pickUpPoint": "207"
+            },
+            {
+                "id": "199",
+                "name": "Bektemir tumani",
+                "pickUpPoint": "199"
+            },
+            {
+                "id": "205",
+                "name": "Sergeli tumani",
+                "pickUpPoint": "205"
+            },
+            {
+                "id": "198",
+                "name": "Uchtepa tumani",
+                "pickUpPoint": "198"
+            },
+            {
+                "id": "202",
+                "name": "Mirobod tumani",
+                "pickUpPoint": "202"
+            },
+            {
+                "id": "206",
+                "name": "Yakkasaroy tumani",
+                "pickUpPoint": "206"
+            },
+            {
+                "id": "204",
+                "name": "Olmazor tumani",
+                "pickUpPoint": "204"
+            },
+            {
+                "id": "203",
+                "name": "Shayxontohur tumani",
+                "pickUpPoint": "203"
+            },
+            {
+                "id": "201",
+                "name": "Mirzo-Ulug'bek tumani",
+                "pickUpPoint": "201"
+            },
+            {
+                "id": "200",
+                "name": "Yunusobod tumani",
+                "pickUpPoint": "200"
+            },
+            {
+                "id": "227",
+                "name": "Yangixayot tumani",
+                "pickUpPoint": "227"
+            }
+        ]
+    },
+    {
+        "countryName": "Toshkent viloyati",
+        "countryCode": "27",
+        "regions": [
+            {
+                "id": "127",
+                "name": "Oxangaron (shahar)",
+                "pickUpPoint": "127"
+            },
+            {
+                "id": "147",
+                "name": "Yangiyul (shahar)",
+                "pickUpPoint": "147"
+            },
+            {
+                "id": "128",
+                "name": "Olmaliq (shahar)",
+                "pickUpPoint": "128"
+            },
+            {
+                "id": "130",
+                "name": "Bekobod (shahar)",
+                "pickUpPoint": "130"
+            },
+            {
+                "id": "129",
+                "name": "Angren (shahar)",
+                "pickUpPoint": "129"
+            },
+            {
+                "id": "131",
+                "name": "Chirchiq (shahar)",
+                "pickUpPoint": "131"
+            },
+            {
+                "id": "145",
+                "name": "Yuqorichirchiq tumani",
+                "pickUpPoint": "145"
+            },
+            {
+                "id": "142",
+                "name": "Toshkent viloyati",
+                "pickUpPoint": "142"
+            },
+            {
+                "id": "146",
+                "name": "Yangiyul tumani",
+                "pickUpPoint": "146"
+            },
+            {
+                "id": "143",
+                "name": "O'rtachirchiq tumani",
+                "pickUpPoint": "143"
+            },
+            {
+                "id": "140",
+                "name": "Quyichirchiq tumani",
+                "pickUpPoint": "140"
+            },
+            {
+                "id": "141",
+                "name": "Pskentskiy tumani",
+                "pickUpPoint": "141"
+            },
+            {
+                "id": "139",
+                "name": "Parkent tumani",
+                "pickUpPoint": "139"
+            },
+            {
+                "id": "132",
+                "name": "Oqqo'rg'on tumani",
+                "pickUpPoint": "132"
+            },
+            {
+                "id": "133",
+                "name": "Oxangaron tumani",
+                "pickUpPoint": "133"
+            },
+            {
+                "id": "138",
+                "name": "Qibray tumani",
+                "pickUpPoint": "138"
+            },
+            {
+                "id": "144",
+                "name": "Chinoz tumani",
+                "pickUpPoint": "144"
+            },
+            {
+                "id": "135",
+                "name": "Bo'ka tumani",
+                "pickUpPoint": "135"
+            },
+            {
+                "id": "134",
+                "name": "Bo'stonliq tumani",
+                "pickUpPoint": "134"
+            },
+            {
+                "id": "137",
+                "name": "Bekobod tumani",
+                "pickUpPoint": "137"
+            },
+            {
+                "id": "136",
+                "name": "Zangiota tumani",
+                "pickUpPoint": "136"
+            },
+            {
+                "id": "223",
+                "name": "Nurafshon (shahar)",
+                "pickUpPoint": "223"
+            }
+        ]
+    },
+    {
+        "countryName": "Farg'ona viloyati",
+        "countryCode": "30",
+        "regions": [
+            {
+                "id": "148",
+                "name": "Qo'qon (shahar)",
+                "pickUpPoint": "148"
+            },
+            {
+                "id": "149",
+                "name": "Marg'ilon (shahar)",
+                "pickUpPoint": "149"
+            },
+            {
+                "id": "150",
+                "name": "Farg'ona (shahar)",
+                "pickUpPoint": "150"
+            },
+            {
+                "id": "151",
+                "name": "Quvasoy (shahar)",
+                "pickUpPoint": "151"
+            },
+            {
+                "id": "156",
+                "name": "Yozyovon tumani",
+                "pickUpPoint": "156"
+            },
+            {
+                "id": "163",
+                "name": "O'zbekiston tumani",
+                "pickUpPoint": "163"
+            },
+            {
+                "id": "164",
+                "name": "Uchko'prik tumani",
+                "pickUpPoint": "164"
+            },
+            {
+                "id": "162",
+                "name": "Toshloq tumani",
+                "pickUpPoint": "162"
+            },
+            {
+                "id": "161",
+                "name": "So'x tumani",
+                "pickUpPoint": "161"
+            },
+            {
+                "id": "160",
+                "name": "Rishton tumani",
+                "pickUpPoint": "160"
+            },
+            {
+                "id": "157",
+                "name": "Kuvinskiy tumani",
+                "pickUpPoint": "157"
+            },
+            {
+                "id": "159",
+                "name": "Qo'shtepa tumani",
+                "pickUpPoint": "159"
+            },
+            {
+                "id": "167",
+                "name": "Qirguli tumani",
+                "pickUpPoint": "167"
+            },
+            {
+                "id": "166",
+                "name": "Furqat tumani",
+                "pickUpPoint": "166"
+            },
+            {
+                "id": "165",
+                "name": "Farg'ona tumani",
+                "pickUpPoint": "165"
+            },
+            {
+                "id": "155",
+                "name": "Dang'ara tumani",
+                "pickUpPoint": "155"
+            },
+            {
+                "id": "154",
+                "name": "Buvaydin tumani",
+                "pickUpPoint": "154"
+            },
+            {
+                "id": "152",
+                "name": "Beshariq tumani",
+                "pickUpPoint": "152"
+            },
+            {
+                "id": "153",
+                "name": "Bag'dod tumani",
+                "pickUpPoint": "153"
+            },
+            {
+                "id": "158",
+                "name": "Oltiariq tumani",
+                "pickUpPoint": "158"
+            }
+        ]
+    },
+    {
+        "countryName": "Xorazm viloyati",
+        "countryCode": "33",
+        "regions": [
+            {
+                "id": "168",
+                "name": "Urganch (shahar)",
+                "pickUpPoint": "168"
+            },
+            {
+                "id": "170",
+                "name": "Pintak (shahar)",
+                "pickUpPoint": "170"
+            },
+            {
+                "id": "179",
+                "name": "Yangibozor tumani",
+                "pickUpPoint": "179"
+            },
+            {
+                "id": "175",
+                "name": "Yangiariq tumani",
+                "pickUpPoint": "175"
+            },
+            {
+                "id": "178",
+                "name": "Urganch tumani",
+                "pickUpPoint": "178"
+            },
+            {
+                "id": "177",
+                "name": "Shavatskiy tumani",
+                "pickUpPoint": "177"
+            },
+            {
+                "id": "176",
+                "name": "Qo'shko'pir tumani",
+                "pickUpPoint": "176"
+            },
+            {
+                "id": "169",
+                "name": "Xiva (shahar)",
+                "pickUpPoint": "169"
+            },
+            {
+                "id": "173",
+                "name": "Xazorasp tumani",
+                "pickUpPoint": "173"
+            },
+            {
+                "id": "174",
+                "name": "Xonqa tumani",
+                "pickUpPoint": "174"
+            },
+            {
+                "id": "171",
+                "name": "Gurlan tumani",
+                "pickUpPoint": "171"
+            },
+            {
+                "id": "172",
+                "name": "Bogʻot tumani",
+                "pickUpPoint": "172"
+            },
+            {
+                "id": "212",
+                "name": "Xiva tumani",
+                "pickUpPoint": "212"
+            },
+            {
+                "id": "226",
+                "name": "Tuprokkal tumani",
+                "pickUpPoint": "226"
+            }
+        ]
+    },
+    {
+       "countryName": "Qoraqalpog'iston Respublikasi",
+        "countryCode": "35",
+        "regions": [
+            {
+                "id": "181",
+                "name": "Taxiyatosh (shahar)",
+                "pickUpPoint": "181"
+            },
+            {
+                "id": "180",
+                "name": "Nukus (shahar)",
+                "pickUpPoint": "180"
+            },
+            {
+                "id": "192",
+                "name": "Qanlikoʻl tumani",
+                "pickUpPoint": "192"
+            },
+            {
+                "id": "182",
+                "name": "Kegeyli tumani",
+                "pickUpPoint": "182"
+            },
+            {
+                "id": "190",
+                "name": "Chimboy tumani",
+                "pickUpPoint": "190"
+            },
+            {
+                "id": "193",
+                "name": "Qoraoʻzak tumani",
+                "pickUpPoint": "193"
+            },
+            {
+                "id": "195",
+                "name": "Bo'zatov tumani",
+                "pickUpPoint": "195"
+            },
+            {
+                "id": "196",
+                "name": " Mangʻit tumani",
+                "pickUpPoint": "196"
+            },
+            {
+                "id": "188",
+                "name": "To'rtko'l tumani",
+                "pickUpPoint": "188"
+            },
+            {
+                "id": "194",
+                "name": "Ellikqal'a tumani",
+                "pickUpPoint": "194"
+            },
+            {
+                "id": "191",
+                "name": "Beruniy tumani",
+                "pickUpPoint": "191"
+            },
+            {
+                "id": "189",
+                "name": " Xoʻjayli tumani",
+                "pickUpPoint": "189"
+            },
+            {
+                "id": "187",
+                "name": "Taxtako'pir tumani",
+                "pickUpPoint": "187"
+            },
+            {
+                "id": "183",
+                "name": "Shumanay tumani",
+                "pickUpPoint": "183"
+            },
+            {
+                "id": "185",
+                "name": "Mo'ynoq tumani",
+                "pickUpPoint": "185"
+            },
+            {
+                "id": "186",
+                "name": "Oqmang'it tumani",
+                "pickUpPoint": "186"
+            },
+            {
+                "id": "184",
+                "name": "Qo'ng'irot tumani",
+                "pickUpPoint": "184"
+            },
+            {
+                "id": "209",
+                "name": "Amudaryo tumani",
+                "pickUpPoint": "209"
+            },
+            {
+                "id": "216",
+                "name": "Nukus tumani",
+                "pickUpPoint": "216"
+            },
+            {
+                "id": "222",
+                "name": "Taxiatosh tumani",
+                "pickUpPoint": "222"
+            },
+            {
+                "id": "225",
+                "name": "Buzatov tumani",
+                "pickUpPoint": "225"
+            }
+        ]
+    }
+]

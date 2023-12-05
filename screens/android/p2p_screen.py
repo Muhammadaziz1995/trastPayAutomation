@@ -4,16 +4,20 @@ import time
 
 
 class P2PScreen(Screen):
-
     transfer_to_card_in_home_screen = ("id", "trastpay.uz:id/imageViewSmallOne")
+    transfer_to_my_funds_home_screen = ("id", "trastpay.uz:id/imageViewSmallTwo")
     transfer_screen_title = ("id", "trastpay.uz:id/editTextCardNumber")
-    confirmation_screen_title = ("id", "trastpay.uz:id/textViewName")
+    confirmation_screen_title = ("xpath", "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/"
+                                          "android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/"
+                                          "android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/"
+                                          "android.widget.LinearLayout/android.widget.TextView")
     sender_part = ("id", "trastpay.uz:id/viewSender")
+    recipient_part = ("id", "trastpay.uz:id/textViewSelectedReceiver")
+    cards_list = ("id", "trastpay.uz:id/textViewCardsTitle")
     recipient_from_history_icon = ("id", "trastpay.uz:id/imageViewReceiverSelect")
     recipient_card_input_field = ("id", "trastpay.uz:id/editTextCardNumber")
     money_amount_input_field = ("id", "trastpay.uz:id/editTextAmount")
     cards_number_ids = ("id", "trastpay.uz:id/textViewDesc")
-    recipient_full_name_on_card = ("id", "trastpay.uz:id/textViewDescReceiver")
     otkazish_button = ("id", "trastpay.uz:id/btnContinue")
     recipient_card_details_in_confirmation_screen = ("id", "trastpay.uz:id/textViewRecipient")
     commission_in_transfer_to_card_screen = ("id", "trastpay.uz:id/textViewCommission")
@@ -23,6 +27,9 @@ class P2PScreen(Screen):
     overall_money_confirm_screen = ("id", "trastpay.uz:id/textViewAllAmount")
     otp_screen_title = ("id", "trastpay.uz:id/textViewWellCome")
     otp_input_field = ("id", "trastpay.uz:id/edittext1")
+    amount_in_uzs = ("id", "trastpay.uz:id/editTextUp")
+    amount_in_usd = ("id", "trastpay.uz:id/editTextDown")
+    recipient_full_name_on_card = ("id", "trastpay.uz:id/textViewDescReceiver")
 
     def is_transfer_to_card_screen_open(self):
         try:
@@ -55,9 +62,13 @@ class P2PScreen(Screen):
 
     def check_all_data_appear_in_confirm_screen(self, recipient_details, sent_money, commission, overall_amount):
         if recipient_details in self.get_element_text(self.recipient_card_details_in_confirmation_screen):
-            if sent_money in self.number_from_string(self.get_element_text(self.sent_money_confirm_screen)):
-                if overall_amount in self.number_from_string(self.get_element_text(self.overall_money_confirm_screen)):
-                    if commission in self.get_element_text(self.commission_confirm_screen):
+            print(recipient_details, " Rec full_name + card_n : ", self.get_element_text(self.recipient_card_details_in_confirmation_screen))
+            if sent_money in self.get_element_text(self.sent_money_confirm_screen):
+                print(sent_money, " Sent money: ", self.get_element_text(self.sent_money_confirm_screen))
+                if commission in self.get_element_text(self.commission_confirm_screen):
+                    print(commission, " Commission : ", self.get_element_text(self.commission_confirm_screen))
+                    if overall_amount in self.get_element_text(self.overall_money_confirm_screen):
+                        print(overall_amount, " Overall money with commission : ", self.get_element_text(self.overall_money_confirm_screen))
                         return True
         return False
 
@@ -75,18 +86,12 @@ class P2PScreen(Screen):
         overall = self.get_element_text(self.overall_transfer_amount_in_transfer_screen).split(' ')
         print("OVERALL:       ->>>    ", overall[0], " ", overall[1])
         print("Length of calculated amount: ", len(overall), overall)
-        if len(overall) == 2:
-            if int(comission_amount) != 0:
-                res = int(overall[0]) + int(comission_amount)
-            else:
-                res = int(overall[0])
-        else:
-            if int(comission_amount) != 0:
-                res = int(overall[0] + overall[1]) + int(comission_amount)
-            else:
-                res = int(overall[0] + overall[1])
-        res = '{:.2f}'.format(float(res))
-        return str(res)
+        # if len(overall) == 2:
+        #     res = float(overall[0])
+        # else:
+        #     res = float(float(overall[0]) + float(overall[1]))
+        # res = '{:.2f}'.format(float(res))
+        return str(overall[0])
 
     def enter_recipient_card_number(self, card_numb):
         self.enter_data(self.recipient_card_input_field, card_numb)
@@ -99,8 +104,17 @@ class P2PScreen(Screen):
     def enter_otp(self, otp):
         self.enter_data(self.otp_input_field, otp)
 
+    def enter_amount_in_uzs(self, uzs):
+        self.enter_data(self.amount_in_uzs, uzs)
+
+    def enter_amount_in_usd(self, usd):
+        self.enter_data(self.amount_in_usd, usd)
+
     def click_on_sender_part(self):
         self.click(self.sender_part)
+
+    def click_on_recipient_part(self):
+        self.click(self.recipient_part)
 
     def click_on_recipient_history_icon(self):
         self.click(self.recipient_from_history_icon)
@@ -108,10 +122,13 @@ class P2PScreen(Screen):
     def click_on_transfer_to_card_icon_in_home(self):
         self.click(self.transfer_to_card_in_home_screen)
 
+    def click_on_transfer_to_my_funds_in_home(self):
+        self.click(self.transfer_to_my_funds_home_screen)
+
     def click_on_otkazish_button(self):
         self.click(self.otkazish_button)
 
-    def select_card_by_last_4_number(self, last_four_numb):
+    def select_card_by_last_4_number(self, last_four_numb): #4529
         all_cards_numbers = self.get_elements(self.cards_number_ids)
         for card_numb in all_cards_numbers:
             if last_four_numb in card_numb.text:
@@ -119,3 +136,15 @@ class P2PScreen(Screen):
                 break
             else:
                 continue
+
+    def select_card_by_title(self, detail_name):
+        all_cards_numbers = self.get_elements(self.cards_number_ids)
+        for card_numb in all_cards_numbers:
+            if detail_name in card_numb.text:
+                card_numb.click()
+                break
+            else:
+                continue
+
+    def scroll_to_wallet(self):
+        self.new_scroll(710, 2633, 710, 550)
