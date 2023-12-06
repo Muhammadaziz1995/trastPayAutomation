@@ -1,1 +1,0 @@
-[33mWARNING [0m urllib3.connectionpool:connectionpool.py:871 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='0.0.0.0', port=4723): Read timed out. (read timeout=1.0)")': /wd/hub/status
