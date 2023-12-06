@@ -74,7 +74,7 @@ def emulator_1(request, pytestconfig, platform, app_path):
     appium_server_1.start(
         args=[
             '--address',
-            '0.0.0.0',
+            '127.0.0.1',
             '--port',
             '4723',
             '--base-path',
