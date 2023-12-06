@@ -6,7 +6,6 @@ import subprocess
 import pytest
 from appium import webdriver
 from appium.webdriver.appium_service import AppiumService
-from allure_commons.types import AttachmentType
 from allure import attachment_type
 import allure
 from appium.options.android import UiAutomator2Options
