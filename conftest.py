@@ -32,7 +32,7 @@ def pytest_addoption(parser):
     # parser.addoption("--emulator_2", action="store", default="")
     # parser.addoption("--emulator_3", action="store", default="")
     # parser.addoption("--emulator_4", action="store", default="")
-    parser.addoption("--app_path", action="store", default="apps/"
+    parser.addoption("--app_path", action="store", default="./apps/"
                                                            "trastPay_1.1.26.05.debug.apk")
 
 
