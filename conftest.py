@@ -96,8 +96,6 @@ def emulator_1(request, pytestconfig, platform, app_path):
     def teardown():
         request.instance.driver_1.terminate_app('trastpay.uz')
         request.instance.driver_1.quit()
-        if platform == "android":
-            subprocess.Popen('adb -s emulator-5554 emu kill', shell=True)
 
     request.addfinalizer(teardown)
 
