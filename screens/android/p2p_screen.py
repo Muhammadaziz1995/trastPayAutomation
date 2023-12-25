@@ -26,7 +26,12 @@ class P2PScreen(Screen):
     commission_confirm_screen = ("id", "trastpay.uz:id/textViewCommission")
     overall_money_confirm_screen = ("id", "trastpay.uz:id/textViewAllAmount")
     otp_screen_title = ("id", "trastpay.uz:id/textViewWellCome")
-    otp_input_field = ("id", "trastpay.uz:id/edittext1")
+    otp_input_field1 = ("id", "trastpay.uz:id/edittext1")
+    otp_input_field2 = ("id", "trastpay.uz:id/edittext2")
+    otp_input_field3 = ("id", "trastpay.uz:id/edittext3")
+    otp_input_field4 = ("id", "trastpay.uz:id/edittext4")
+    otp_input_field5 = ("id", "trastpay.uz:id/edittext5")
+    otp_input_field6 = ("id", "trastpay.uz:id/edittext6")
     amount_in_uzs = ("id", "trastpay.uz:id/editTextUp")
     amount_in_usd = ("id", "trastpay.uz:id/editTextDown")
     recipient_full_name_on_card = ("id", "trastpay.uz:id/textViewDescReceiver")
@@ -102,7 +107,12 @@ class P2PScreen(Screen):
         self.enter_data(self.money_amount_input_field, money_amount)
 
     def enter_otp(self, otp):
-        self.enter_data(self.otp_input_field, otp)
+        self.enter_data(self.otp_input_field1, otp[0])
+        self.enter_data(self.otp_input_field2, otp[1])
+        self.enter_data(self.otp_input_field3, otp[2])
+        self.enter_data(self.otp_input_field4, otp[3])
+        self.enter_data(self.otp_input_field5, otp[4])
+        self.enter_data(self.otp_input_field6, otp[5])
 
     def enter_amount_in_uzs(self, uzs):
         self.enter_data(self.amount_in_uzs, uzs)
