@@ -21,7 +21,7 @@ class LoginFlow(AndroidBaseFlow):
         assert self.welcome_screen.is_otp_tasdiqlash_screen_open()
         self.p2p_screen.enter_otp('998112')
         # assert self.welcome_screen.is_entered_phone_number_exist(phone_number)
-        time.sleep(6)
+        time.sleep(1)
         assert self.welcome_screen.is_pin_code_screen_open()
         self.welcome_screen.create_pin_code()
         assert self.welcome_screen.is_confirm_pin_code_screen_open()
