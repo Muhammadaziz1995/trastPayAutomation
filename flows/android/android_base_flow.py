@@ -1,5 +1,5 @@
 from tests.utils import lazy_property
-from conftest import PATH
+from tests.conftest import PATH
 # from navigations.android.navigation import NavigationAndroid
 from screens.android.welcome_screen import WelcomeScreen
 from screens.android.home_screen import HomeScreen

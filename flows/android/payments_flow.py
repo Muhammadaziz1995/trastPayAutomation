@@ -28,13 +28,10 @@ class PaymentsFlow(AndroidBaseFlow):
         self.p2p_screen.select_card_by_last_4_number(card_last_4_numb)
         self.payments_screen.click_on_continue_button()
         assert self.p2p_screen.is_otp_screen_open()
-        # self.p2p_screen.enter_otp(otp)
+        self.p2p_screen.enter_otp('998112')
         time.sleep(6)
         assert self.cheque_screen.check_cheque_title()
-        if self.cheque_screen.check_cheque_details_in_last_cheque_screen(summa, summa, card_last_4_numb, commission,
-                                                                             number):
-            assert True
-        else:
-            self.screens.get_a_screenshot_as_PNG("Payments.png")
+        assert self.cheque_screen.check_cheque_details_in_last_cheque_screen(summa, summa, card_last_4_numb, commission,
+                                                                             number)
         self.cheque_screen.click_on_home_screen_button()
         return True

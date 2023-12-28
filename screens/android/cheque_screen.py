@@ -19,8 +19,9 @@ class ChequeScreen(Screen):
 
     def check_cheque_title(self):
         try:
-            if self.is_visible(self.success_img) and self.get_element_text(self.muvaffaqqiyatli_cheque_title) != "Xato":
-                return True
+            if self.is_visible(self.success_img):
+                if self.get_element_text(self.muvaffaqqiyatli_cheque_title) != "Xato":
+                    return True
         except Exception:
             raise NoSuchElementException
         return False

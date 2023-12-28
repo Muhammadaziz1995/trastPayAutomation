@@ -35,10 +35,7 @@ class LoanFlow(AndroidBaseFlow):
         # self.p2p_screen.enter_otp(otp)
         time.sleep(6)
         assert self.cheque_screen.check_cheque_title()
-        if self.cheque_screen.check_cheque_details_in_last_cheque_screen(overall, overall, card_last_4_numb, commission,
-                                                                             credit_id):
-            assert True
-        else:
-            self.screens.get_a_screenshot_as_PNG("Loan.png")
+        assert self.cheque_screen.check_cheque_details_in_last_cheque_screen(overall, overall, card_last_4_numb, commission,
+                                                                             credit_id)
         self.cheque_screen.click_on_home_screen_button()
         return True

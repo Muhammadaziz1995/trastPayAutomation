@@ -29,11 +29,8 @@ class ProfileFlow(AndroidBaseFlow):
         self.home_screen.click_on_trastpay_app()
         self.welcome_screen.is_enter_pin_code_screen_open()
         self.welcome_screen.create_pin_code()
-        self.welcome_screen.create_pin_code()
-        if self.home_screen.is_home_screen_open():
-            assert True
-        else:
-            self.screens.get_a_screenshot_as_PNG("Profile")
+        # self.welcome_screen.create_pin_code()
+        assert self.home_screen.is_home_screen_open()
         return True
 
 

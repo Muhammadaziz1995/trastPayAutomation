@@ -29,8 +29,8 @@ class LoanScreen(Screen):
         try:
             if "Kreditlar" in self.get_element_text(self.loan_screen_title):
                 return True
-        except Exception:
-            raise NoSuchElementException
+        except NoSuchElementException as e:
+            print(e.msg, "Error with ->> ", self.loan_screen_title)
         return False
 
     def is_loan_name_exist(self):
