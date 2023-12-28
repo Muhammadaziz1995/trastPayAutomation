@@ -6,7 +6,7 @@ import subprocess
 import pytest
 from appium import webdriver
 from appium.webdriver.appium_service import AppiumService
-from allure_commons.types import AttachmentType
+# from allure_commons.types import AttachmentType
 from allure import attachment_type
 import allure
 from appium.options.android import UiAutomator2Options
@@ -81,6 +81,10 @@ def emulator_1(request, pytestconfig, platform, app_path):
             '--base-path',
             '/wd/hub'
         ]
+        # main_script="/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/build/lib/main.js",
+        # node="/usr/local/bin/node",
+        # npm="/usr/local/bin/npm"
+        # stdout=subprocess.DEVNULL
     )
     # appium_server_1.start(args=["-a", "0.0.0.0", "-p", "4723"])
     # appium_server_1.start(a="0.0.0.0", p="4723")
@@ -93,7 +97,7 @@ def emulator_1(request, pytestconfig, platform, app_path):
 
     def teardown():
         request.instance.driver_1.terminate_app('trastpay.uz')
-        request.instance.driver_1.quit()
+        request.instance.driver_1.close()
         if platform == "android":
             subprocess.Popen('adb -s emulator-5554 emu kill', shell=True)
 
@@ -134,7 +138,7 @@ def emulator_2(request, pytestconfig, platform, app_path):
 
     def teardown():
         request.instance.driver_2.close_app()
-        request.instance.driver_2.quit()
+        request.instance.driver_2.close()
         if platform == "android":
             subprocess.Popen('adb -s emulator-5556 emu kill', shell=True)
 
@@ -168,12 +172,12 @@ def setup_capabilities(platform, emulator_name, app_path):
             'appium:platformVersion': emulator_name.split('_')[-1],
             'appium:deviceName': emulator_name,
             'appium:avd': emulator_name,
-            'appium:newCommandTimeout': 3600,
+            'appium:newCommandTimeout': 1800, #3600
             'appium:noReset': True,
             'appium:app': PATH(app_path),
-            'appium:appWaitDuration': 300000,
-            'appium:avdReadyTimeout': 500000,
-            'appium:adbExecTimeout': 500000,
+            'appium:appWaitDuration': 100000, #500000
+            'appium:avdReadyTimeout': 100000, # 500000
+            'appium:adbExecTimeout': 100000, # 500000
             'appium:automationName': 'UiAutomator2',
             'appium:appPackage': 'trastpay.uz',
             'appium:appActivity': 'uz.trastpay.ui.activity.MainActivity'
@@ -204,25 +208,25 @@ def restart_app(request):
 
 
 # This function below is showing doc string of test functions
-def pytest_itemcollected(item):
-    par = item.parent.obj
-    node = item.obj
-    pref = par.__doc__.strip() if par.__doc__ else par.__class__.__name__
-    suf = node.__doc__.strip() if node.__doc__ else node.__name__
-    if suf:
-        item._nodeid = item._nodeid + ': -- ' + suf + ' --'
+# def pytest_itemcollected(item):
+#     par = item.parent.obj
+#     node = item.obj
+#     pref = par.__doc__.strip() if par.__doc__ else par.__class__.__name__
+#     suf = node.__doc__.strip() if node.__doc__ else node.__name__
+#     if suf:
+#         item._nodeid = item._nodeid + ': -- ' + suf + ' --'
 
 
-def pytest_generate_tests(metafunc):
-    if metafunc.config.option.repeat is not None:
-        count = int(metafunc.config.option.repeat)
-
-        # We're going to duplicate these tests by parametrizing them,
-        # which requires that each test has a fixture to accept the parameter.
-        # We can add a new fixture like so:
-        metafunc.fixturenames.append('tmp_ct')
-
-        # Now we parametrize. This is what happens when we do e.g.,
-        # @pytest.mark.parametrize('tmp_ct', range(count))
-        # def test_foo(): pass
-        metafunc.parametrize('tmp_ct', range(count))
+# def pytest_generate_tests(metafunc):
+#     if metafunc.config.option.repeat is not None:
+#         count = int(metafunc.config.option.repeat)
+#
+#         # We're going to duplicate these tests by parametrizing them,
+#         # which requires that each test has a fixture to accept the parameter.
+#         # We can add a new fixture like so:
+#         metafunc.fixturenames.append('tmp_ct')
+#
+#         # Now we parametrize. This is what happens when we do e.g.,
+#         # @pytest.mark.parametrize('tmp_ct', range(count))
+#         # def test_foo(): pass
+#         metafunc.parametrize('tmp_ct', range(count))
