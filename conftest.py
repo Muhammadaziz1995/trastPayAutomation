@@ -80,9 +80,9 @@ def emulator_1(request, pytestconfig, platform, app_path):
             '--base-path',
             '/wd/hub'
         ],
-        main_script="/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/build/lib/main.js",
-        node="/usr/local/bin/node",
-        npm="/usr/local/bin/npm"
+        # main_script="/Applications/Appium Server GUI.app/Contents/Resources/app/node_modules/appium/build/lib/main.js",
+        # node="/usr/local/bin/node",
+        # npm="/usr/local/bin/npm"
     )
     # appium_server_1.start(args=["-a", "0.0.0.0", "-p", "4723"])
     # appium_server_1.start(a="0.0.0.0", p="4723")
