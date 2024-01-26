@@ -34,7 +34,7 @@ def pytest_addoption(parser):
     # parser.addoption("--emulator_3", action="store", default="")
     # parser.addoption("--emulator_4", action="store", default="")
     parser.addoption("--app_path", action="store", default="/Users/mx13/Desktop/tpay_automation/apps/"
-                                                           "trastPay_1.1.31.03.debug.apk")
+                                                           "trastPay_1.1.31.03.debug.apk") # app version us change
 
 
 @pytest.fixture(scope="session")
